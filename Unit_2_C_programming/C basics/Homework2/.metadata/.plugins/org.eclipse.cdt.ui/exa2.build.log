@@ -1,0 +1,9 @@
+21:16:24 **** Build of configuration Debug for project exa2 ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jre-1.8/bin/client;C:/Program Files (x86)/Java/jre-1.8/bin;C:/Program Files (x86)/Java/jre-1.8/lib/i386;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\runtime\win64;E:\bin;E:\polyspace\bin;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI;C:\Program Files\Git\cmd;C:\Users\ziade\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\ziade\AppData\Local\Programs\Python\Python38\;C:\Users\ziade\AppData\Local\Microsoft\WindowsApps;C:\altera\13.1\modelsim_ase\win32aloem;C:\Users\ziade\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ziade\AppData\Local\GitHubDesktop\bin;C:\Users\ziade\Downloads\Compressed\eclipse-cpp-neon-2-win32\eclipse]
+
+21:16:24 Build Finished (took 56ms)
+

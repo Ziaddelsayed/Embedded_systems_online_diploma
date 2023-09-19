@@ -1,0 +1,213 @@
+14:30:12 **** Rebuild of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+gcc -o ex1.exe "src\\ex1.o" 
+14:30:19 **** Incremental Build of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+gcc -o ex1.exe "src\\ex1.o" 
+Info: Nothing to build for ex1
+14:34:05 **** Rebuild of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+14:34:16 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+14:35:22 **** Incremental Build of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+gcc -o ex1.exe "src\\ex1.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+14:39:16 **** Rebuild of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+14:39:20 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:18:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+          ^
+..\src\ex3.c:18:13: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+             ^
+..\src\ex3.c:18:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf("%d %d",x,y);
+  ^~~~~~~~~~~~~~~~~~
+..\src\ex3.c:18:2: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+gcc -o ex3.exe "src\\ex3.o" 
+Info: Nothing to build for ex3
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+Info: Nothing to build for ex3
+14:40:27 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:18:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+          ^
+..\src\ex3.c:18:13: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+             ^
+..\src\ex3.c:18:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf("%d %d",x,y);
+  ^~~~~~~~~~~~~~~~~~
+..\src\ex3.c:18:2: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+gcc -o ex3.exe "src\\ex3.o" 
+14:40:49 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:18:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+          ^
+..\src\ex3.c:18:13: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+             ^
+..\src\ex3.c:18:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf("%d %d",x,y);
+  ^~~~~~~~~~~~~~~~~~
+..\src\ex3.c:18:2: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+gcc -o ex3.exe "src\\ex3.o" 
+14:41:15 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:18:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+          ^
+..\src\ex3.c:18:13: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+             ^
+..\src\ex3.c:18:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf("%d %d",x,y);
+  ^~~~~~~~~~~~~~~~~~
+..\src\ex3.c:18:2: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+gcc -o ex3.exe "src\\ex3.o" 
+14:42:17 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:18:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+          ^
+..\src\ex3.c:18:13: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+             ^
+..\src\ex3.c:21:2: error: expected ';' before 'return'
+  return 0;
+  ^~~~~~
+14:42:40 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:18:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+          ^
+..\src\ex3.c:18:13: warning: format '%d' expects argument of type 'int *', but argument 3 has type 'int' [-Wformat=]
+  scanf("%d %d",x,y);
+             ^
+..\src\ex3.c:18:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf("%d %d",x,y);
+  ^~~~~~~~~~~~~~~~~~
+..\src\ex3.c:18:2: warning: 'y' is used uninitialized in this function [-Wuninitialized]
+gcc -o ex3.exe "src\\ex3.o" 
+14:44:46 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:15:10: warning: unused variable 'z' [-Wunused-variable]
+  int x,y,z;
+          ^
+gcc -o ex3.exe "src\\ex3.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+Info: Nothing to build for ex3
+14:48:23 **** Rebuild of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex4.o" "..\\src\\ex4.c" 
+gcc -o ex4.exe "src\\ex4.o" 
+14:48:27 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex4.o" "..\\src\\ex4.c" 
+gcc -o ex4.exe "src\\ex4.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+Info: Nothing to build for ex3
+Info: Nothing to build for ex4
+14:56:11 **** Rebuild of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+gcc -o ex5.exe "src\\ex5.o" 
+14:56:14 **** Incremental Build of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+..\src\ex5.c: In function 'main':
+..\src\ex5.c:20:2: error: expected ';' before 'return'
+  return 0;
+  ^~~~~~
+14:56:30 **** Incremental Build of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+gcc -o ex5.exe "src\\ex5.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+Info: Nothing to build for ex3
+Info: Nothing to build for ex4
+Info: Nothing to build for ex5
+15:03:04 **** Rebuild of configuration Debug for project ex6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex6.o" "..\\src\\ex6.c" 
+gcc -o ex6.exe "src\\ex6.o" 
+15:03:11 **** Incremental Build of configuration Debug for project ex6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex6.o" "..\\src\\ex6.c" 
+gcc -o ex6.exe "src\\ex6.o" 
+15:03:45 **** Incremental Build of configuration Debug for project ex6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex6.o" "..\\src\\ex6.c" 
+gcc -o ex6.exe "src\\ex6.o" 
+15:06:26 **** Incremental Build of configuration Debug for project ex6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex6.o" "..\\src\\ex6.c" 
+gcc -o ex6.exe "src\\ex6.o" 
+15:09:22 **** Incremental Build of configuration Debug for project ex6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex6.o" "..\\src\\ex6.c" 
+gcc -o ex6.exe "src\\ex6.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+Info: Nothing to build for ex3
+Info: Nothing to build for ex4
+Info: Nothing to build for ex5
+Info: Nothing to build for ex6
+15:21:52 **** Rebuild of configuration Debug for project ex7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex7.o" "..\\src\\ex7.c" 
+gcc -o ex7.exe "src\\ex7.o" 
+15:21:55 **** Incremental Build of configuration Debug for project ex7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex7.o" "..\\src\\ex7.c" 
+..\src\ex7.c: In function 'main':
+..\src\ex7.c:18:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int *' [-Wformat=]
+  scanf("%f %f",&a,&b);
+          ^
+..\src\ex7.c:18:13: warning: format '%f' expects argument of type 'float *', but argument 3 has type 'int *' [-Wformat=]
+  scanf("%f %f",&a,&b);
+             ^
+..\src\ex7.c:22:43: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("After swapping, value of a  is :%f\n",a);
+                                           ^
+..\src\ex7.c:23:43: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("After swapping, value of b  is :%f",b);
+                                           ^
+gcc -o ex7.exe "src\\ex7.o" 
+15:22:30 **** Incremental Build of configuration Debug for project ex7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex7.o" "..\\src\\ex7.c" 
+gcc -o ex7.exe "src\\ex7.o" 

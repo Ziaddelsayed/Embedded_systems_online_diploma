@@ -1,0 +1,15 @@
+15:26:40 **** Rebuild of configuration Debug for project lab ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\lab.o" "..\\src\\lab.c" 
+gcc -o lab.exe "src\\lab.o" 
+15:26:43 **** Incremental Build of configuration Debug for project lab ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\lab.o" "..\\src\\lab.c" 
+..\src\lab.c: In function 'main':
+..\src\lab.c:16:3: warning: statement with no effect [-Wunused-value]
+   for(i;i<=9;i++)
+   ^~~
+..\src\lab.c:18:4: warning: statement with no effect [-Wunused-value]
+    for(j;j<=9;j++)
+    ^~~
+gcc -o lab.exe "src\\lab.o" 
