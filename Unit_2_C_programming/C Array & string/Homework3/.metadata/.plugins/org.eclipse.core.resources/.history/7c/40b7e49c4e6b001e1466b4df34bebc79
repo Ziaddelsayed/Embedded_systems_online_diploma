@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : ex2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float a[100],temp;
+	int i,b;
+	printf("Enter the numbers of data: \n");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&b);
+
+	//to fill the array
+	for(i=0;i<b;i++)
+	{
+		printf("%d.Enter the number :\n",i+1);
+		fflush(stdin);fflush(stdout);
+		scanf("%f",&a[i]);
+		temp+=a[i];
+	}
+
+	// to calculate the average
+	printf("Average =%f",temp/b);
+	return 0;
+}

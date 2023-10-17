@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : exa3.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void) {
+	char temp,text[1000] ;
+	int i=0,j=0;
+	printf("Enter a string:\n");
+	fflush(stdin);fflush(stdout);
+	gets(text);
+	j=strlen(text)-1;
+	//to reverse
+	while(i<j)
+	{
+		temp=text[i];
+		text[i]=text[j];
+		text[j]=temp;
+		j--;
+		i++;
+	}
+	printf("Reverse string is:%s",text);
+
+	return 0;
+}

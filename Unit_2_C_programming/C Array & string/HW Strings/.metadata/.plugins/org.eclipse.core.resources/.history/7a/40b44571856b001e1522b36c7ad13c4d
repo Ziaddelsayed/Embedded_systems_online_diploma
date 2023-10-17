@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : ex1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char x[100],c;
+	int i,freq=0;
+	printf("Enter a string:\n");
+	fflush(stdin);fflush(stdout);
+	gets(x);
+	printf("Enter a character to find frequency:\n");
+	fflush(stdin);fflush(stdout);
+	scanf("%c",&c);
+	for(i=0;i<100;i++)
+	{
+		if(x[i]==c)
+		{
+			freq+=1;
+		}
+
+	}
+	printf("The frequency of %c=%d\n",c,freq);
+
+	return 0;
+}

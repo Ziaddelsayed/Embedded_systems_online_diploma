@@ -1,0 +1,270 @@
+19:39:38 **** Rebuild of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+gcc -o ex1.exe "src\\ex1.o" 
+19:39:43 **** Incremental Build of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+..\src\ex1.c: In function 'main':
+..\src\ex1.c:22:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%s",c);
+          ^
+..\src\ex1.c:31:28: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("The frequency of %s=%d\n",c,freq);
+                            ^
+..\src\ex1.c:22:2: warning: 'c' is used uninitialized in this function [-Wuninitialized]
+  scanf("%s",c);
+  ^~~~~~~~~~~~~
+gcc -o ex1.exe "src\\ex1.o" 
+19:40:34 **** Incremental Build of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+..\src\ex1.c: In function 'main':
+..\src\ex1.c:31:28: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("The frequency of %s=%d\n",c,freq);
+                            ^
+gcc -o ex1.exe "src\\ex1.o" 
+19:41:36 **** Incremental Build of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+gcc -o ex1.exe "src\\ex1.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex1
+20:05:05 **** Rebuild of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+20:05:10 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+20:05:37 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:18:49 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:19:23 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -o ex2.exe "src\\ex2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for ex1
+20:20:10 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -o ex2.exe "src\\ex2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:20:11 **** Rebuild of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+gcc -o exa2.exe "src\\exa2.o" 
+20:20:15 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+..\src\exa2.c: In function 'main':
+..\src\exa2.c:15:6: warning: 'main' is normally a non-static function [-Wmain]
+  int main(void) {
+      ^~~~
+..\src\exa2.c:30:2: error: expected declaration or statement at end of input
+  }
+  ^
+At top level:
+..\src\exa2.c:15:6: warning: 'main' defined but not used [-Wunused-function]
+  int main(void) {
+      ^~~~
+20:20:29 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+gcc -o exa2.exe "src\\exa2.o" 
+20:21:12 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+gcc -o exa2.exe "src\\exa2.o" 
+20:22:42 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+..\src\exa2.c: In function 'main':
+..\src\exa2.c:25:8: warning: 'len' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     len+=i;
+     ~~~^~~
+gcc -o exa2.exe "src\\exa2.o" 
+20:23:23 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+..\src\exa2.c: In function 'main':
+..\src\exa2.c:25:8: warning: 'len' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     len+=i;
+     ~~~^~~
+gcc -o exa2.exe "src\\exa2.o" 
+20:26:14 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+..\src\exa2.c: In function 'main':
+..\src\exa2.c:17:9: warning: unused variable 'len' [-Wunused-variable]
+   int i,len;
+         ^~~
+gcc -o exa2.exe "src\\exa2.o" 
+20:27:46 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+..\src\exa2.c: In function 'main':
+..\src\exa2.c:17:9: warning: unused variable 'len' [-Wunused-variable]
+   int i,len;
+         ^~~
+gcc -o exa2.exe "src\\exa2.o" 
+20:28:10 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+..\src\exa2.c: In function 'main':
+..\src\exa2.c:17:9: warning: unused variable 'len' [-Wunused-variable]
+   int i,len;
+         ^~~
+gcc -o exa2.exe "src\\exa2.o" 
+20:30:14 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+gcc -o exa2.exe "src\\exa2.o" 
+20:31:22 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+..\src\exa2.c: In function 'main':
+..\src\exa2.c:21:14: warning: array subscript has type 'char' [-Wchar-subscripts]
+  for(i=0;text[i]!='\0';i++)
+              ^
+gcc -o exa2.exe "src\\exa2.o" 
+20:33:54 **** Incremental Build of configuration Debug for project exa2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa2.o" "..\\src\\exa2.c" 
+gcc -o exa2.exe "src\\exa2.o" 
+Info: Nothing to build for ex1
+20:45:16 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -o ex2.exe "src\\ex2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:45:16 **** Rebuild of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+Info: Nothing to build for exa2
+20:45:22 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:20:8: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  for(i=strlen(text);i>=1;i--)
+        ^~~~~~
+..\src\ex3.c:20:8: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\ex3.c:20:8: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\ex3.c:25:29: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("Reverse string is:%s",rev[i]);
+                             ^
+gcc -o ex3.exe "src\\ex3.o" 
+20:45:57 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:20:8: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  for(i=strlen(text);i>=1;i--)
+        ^~~~~~
+..\src\ex3.c:20:8: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\ex3.c:20:8: note: include '<string.h>' or provide a declaration of 'strlen'
+gcc -o ex3.exe "src\\ex3.o" 
+20:47:05 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:20:8: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  for(i=strlen(text);i>=1;i--)
+        ^~~~~~
+..\src\ex3.c:20:8: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\ex3.c:20:8: note: include '<string.h>' or provide a declaration of 'strlen'
+gcc -o ex3.exe "src\\ex3.o" 
+20:49:54 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+20:50:30 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+20:53:03 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+20:56:48 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+20:59:09 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:26:3: error: expected ';' before 'j'
+   j++;
+   ^
+20:59:24 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:23:10: warning: 'temp' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   text[i]=temp;
+   ~~~~~~~^~~~~
+gcc -o ex3.exe "src\\ex3.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:59:50 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+..\src\ex3.c: In function 'main':
+..\src\ex3.c:23:10: warning: 'temp' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   text[i]=temp;
+   ~~~~~~~^~~~~
+gcc -o ex3.exe "src\\ex3.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:00:56 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for ex1
+21:01:20 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -o ex2.exe "src\\ex2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:01:21 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -o ex3.exe "src\\ex3.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for exa2
+21:01:21 **** Rebuild of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+21:01:24 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+21:03:41 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+21:04:17 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+21:04:45 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 

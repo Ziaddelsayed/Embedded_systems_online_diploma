@@ -1,0 +1,262 @@
+21:40:17 **** Rebuild of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+gcc -o ex1.exe "src\\ex1.o" 
+21:40:21 **** Incremental Build of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex1.o" "..\\src\\ex1.c" 
+gcc -o ex1.exe "src\\ex1.o" 
+Info: Nothing to build for ex1
+14:26:25 **** Rebuild of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+14:26:33 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+..\src\ex2.c: In function 'main':
+..\src\ex2.c:15:8: error: array size missing in 'a'
+  float a[],temp;
+        ^
+..\src\ex2.c:31:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("Average =",temp/b);
+         ^~~~~~~~~~~
+14:28:51 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+14:30:36 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+14:31:33 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+Info: Nothing to build for ex2
+14:33:07 **** Incremental Build of configuration Debug for project ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex2.o" "..\\src\\ex2.c" 
+gcc -o ex2.exe "src\\ex2.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+15:00:49 **** Rebuild of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+15:00:55 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+15:01:40 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex3.o" "..\\src\\ex3.c" 
+gcc -o ex3.exe "src\\ex3.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+15:02:28 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -o ex3.exe "src\\ex3.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:02:31 **** Incremental Build of configuration Debug for project ex3 ****
+Info: Internal Builder is used for build
+gcc -o ex3.exe "src\\ex3.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for ex2
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+15:06:08 **** Rebuild of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+15:06:15 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+15:08:23 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+15:09:20 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+15:10:30 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+15:13:04 **** Incremental Build of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+15:46:25 **** Rebuild of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex4.o" "..\\src\\ex4.c" 
+gcc -o ex4.exe "src\\ex4.o" 
+15:46:26 **** Rebuild of configuration Debug for project exa3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa3.o" "..\\src\\exa3.c" 
+gcc -o exa3.exe "src\\exa3.o" 
+15:46:31 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex4.o" "..\\src\\ex4.c" 
+gcc -o ex4.exe "src\\ex4.o" 
+15:47:00 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex4.o" "..\\src\\ex4.c" 
+gcc -o ex4.exe "src\\ex4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:47:31 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex4.o" "..\\src\\ex4.c" 
+gcc -o ex4.exe "src\\ex4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:51:42 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex4.o" "..\\src\\ex4.c" 
+gcc -o ex4.exe "src\\ex4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+15:52:28 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -o ex4.exe "src\\ex4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for exa3
+15:52:29 **** Rebuild of configuration Debug for project exa4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa4.o" "..\\src\\exa4.c" 
+gcc -o exa4.exe "src\\exa4.o" 
+15:52:37 **** Incremental Build of configuration Debug for project exa4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa4.o" "..\\src\\exa4.c" 
+gcc -o exa4.exe "src\\exa4.o" 
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+16:02:11 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -o ex4.exe "src\\ex4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for exa3
+Info: Nothing to build for exa4
+16:02:19 **** Incremental Build of configuration Debug for project exa4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa4.o" "..\\src\\exa4.c" 
+gcc -o exa4.exe "src\\exa4.o" 
+16:03:30 **** Incremental Build of configuration Debug for project exa4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exa4.o" "..\\src\\exa4.c" 
+gcc -o exa4.exe "src\\exa4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file exa4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:03:45 **** Incremental Build of configuration Debug for project exa4 ****
+Info: Internal Builder is used for build
+gcc -o exa4.exe "src\\exa4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file exa4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+16:04:33 **** Incremental Build of configuration Debug for project ex4 ****
+Info: Internal Builder is used for build
+gcc -o ex4.exe "src\\ex4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file ex4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for exa3
+16:04:33 **** Incremental Build of configuration Debug for project exa4 ****
+Info: Internal Builder is used for build
+gcc -o exa4.exe "src\\exa4.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file exa4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:04:34 **** Rebuild of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+16:04:37 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+16:05:54 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+16:14:54 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+16:15:22 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+16:15:51 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+16:16:48 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+16:17:04 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+Info: Nothing to build for exam4
+Info: Nothing to build for ex1
+Info: Nothing to build for ex2
+19:07:14 **** Rebuild of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+gcc -o ex5.exe "src\\ex5.o" 
+Info: Nothing to build for exa3
+19:07:16 **** Incremental Build of configuration Debug for project exam4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\exam4.o" "..\\src\\exam4.c" 
+gcc -o exam4.exe "src\\exam4.o" 
+19:07:24 **** Incremental Build of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+..\src\ex5.c: In function 'main':
+..\src\ex5.c:21:4: error: subscripted value is neither array nor pointer nor vector
+   a[i]=(i+1)*11;
+    ^
+..\src\ex5.c:22:3: warning: implicit declaration of function 'prinrf' [-Wimplicit-function-declaration]
+   prinrf("%d\t",a[i]);
+   ^~~~~~
+..\src\ex5.c:22:18: error: subscripted value is neither array nor pointer nor vector
+   prinrf("%d\t",a[i]);
+                  ^
+..\src\ex5.c:29:7: error: subscripted value is neither array nor pointer nor vector
+   if(a[i] == c)
+       ^
+..\src\ex5.c:15:8: warning: variable 'a' set but not used [-Wunused-but-set-variable]
+  int i,a,num,c;
+        ^
+19:09:08 **** Incremental Build of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+..\src\ex5.c: In function 'main':
+..\src\ex5.c:22:3: warning: implicit declaration of function 'prinrf' [-Wimplicit-function-declaration]
+   prinrf("%d\t",a[i]);
+   ^~~~~~
+gcc -o ex5.exe "src\\ex5.o" 
+src\ex5.o: In function `main':
+D:\Embedded system diploma\github_repo\Unit_2_C_programming\C Array & string\Homework3\ex5\Debug/../src/ex5.c:22: undefined reference to `prinrf'
+collect2.exe: error: ld returned 1 exit status
+19:09:39 **** Incremental Build of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+gcc -o ex5.exe "src\\ex5.o" 
+19:10:51 **** Incremental Build of configuration Debug for project ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ex5.o" "..\\src\\ex5.c" 
+gcc -o ex5.exe "src\\ex5.o" 

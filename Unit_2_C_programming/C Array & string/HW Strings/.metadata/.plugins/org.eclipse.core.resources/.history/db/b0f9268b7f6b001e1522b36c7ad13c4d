@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : exa2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+		char text[100];
+		int i,len;
+		printf("Enter a string:\n");
+		fflush(stdin);fflush(stdout);
+		gets(text);
+		for(i=0;i<100;i++)
+		{
+			while(text[i]=='0')
+				{
+				len+=i;
+				break;
+				}
+			break;
+		}
+		printf("Length of string=%d ",len);
+		return 0;
+
+	}
