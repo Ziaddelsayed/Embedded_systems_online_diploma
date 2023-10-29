@@ -1,0 +1,29 @@
+/*
+ ============================================================================
+ Name        : ex4.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int power(int x,int y);
+int main(void) {
+	int base,e;
+	printf("Enter base no:\n  and Enter power no(+ve integer): ");
+	scanf("%d %d",&base,&e);
+	printf("%d^%d=%d",base,e,power(base,e));
+	return 0;
+}
+int power(base,e){
+	if(e!=0)
+	{
+		return (base*power(base,e-1));
+	}
+	else
+		return 1;
+}

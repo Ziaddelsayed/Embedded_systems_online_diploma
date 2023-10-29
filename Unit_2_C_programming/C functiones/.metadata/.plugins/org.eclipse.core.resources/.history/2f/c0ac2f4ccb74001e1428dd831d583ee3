@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : ex1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int Check(int num){
+
+	int j,prime;
+	for(j=2;j<num;j++)
+	{
+		if(num%j==0)
+		{
+			prime=0;
+			break;
+		}
+	}
+
+return prime;
+}
+
+int main(void) {
+
+	int start, end, prime,i;
+	printf("Enter two numbers(intervals)%d %d ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d %d",&start,&end);
+	for(i=start;i<=end;i++)
+	{
+		prime= check(i);
+
+		if(prime)
+		{
+			printf(" prime numbers between %d & %d is: %d \t",start,end,i);
+		}
+	}
+	return 0;
+}
