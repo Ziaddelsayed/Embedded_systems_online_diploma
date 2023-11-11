@@ -1,0 +1,35 @@
+/*
+ ============================================================================
+ Name        : ex2.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char *pr=NULL;
+	int i;
+	char alphabets[27];
+	pr=alphabets;
+	printf("The alphabets:\n");
+	fflush(stdin);fflush(stdout);
+	for(i=0;i<26;i++)
+	{
+		scanf("%c",pr+i);
+
+	}
+	printf("\n");
+	pr=alphabets;
+	printf("The Alphabets are :\n");
+	for(i=0;i<26;i++)
+	{
+		printf("%c",*pr+i);
+
+	}
+	return 0;
+}
