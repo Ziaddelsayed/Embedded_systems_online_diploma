@@ -1,10 +1,23 @@
-16:41:58 **** Build of configuration Debug for project Led_toggle ****
+22:16:29 **** Build of configuration Debug for project Led_toggle ****
 make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Led_toggle.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Unit_3_Embedded_C\Lesson1_Assignment\Led_toggle\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_toggle.elf
+ 
 arm-none-eabi-size   Led_toggle.elf 
+arm-none-eabi-objdump -h -S  Led_toggle.elf  > "Led_toggle.list"
+arm-none-eabi-objcopy  -O binary  Led_toggle.elf  "Led_toggle.bin"
    text	   data	    bss	    dec	    hex	filename
     672	      8	   1568	   2248	    8c8	Led_toggle.elf
 Finished building: default.size.stdout
  
+Finished building: Led_toggle.bin
+Finished building: Led_toggle.list
+ 
+ 
 
-16:41:59 Build Finished. 0 errors, 0 warnings. (took 459ms)
+22:16:30 Build Finished. 0 errors, 0 warnings. (took 1s.706ms)
 
