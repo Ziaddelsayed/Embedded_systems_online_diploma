@@ -1,0 +1,10 @@
+16:41:58 **** Build of configuration Debug for project Led_toggle ****
+make -j16 all 
+arm-none-eabi-size   Led_toggle.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	Led_toggle.elf
+Finished building: default.size.stdout
+ 
+
+16:41:59 Build Finished. 0 errors, 0 warnings. (took 459ms)
+

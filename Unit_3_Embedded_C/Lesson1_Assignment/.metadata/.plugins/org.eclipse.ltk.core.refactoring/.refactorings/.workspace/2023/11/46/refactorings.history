@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Led_toggle/Src/platform_types&apos;" deleteContents="false" description="Delete resource &apos;Led_toggle/Src/platform_types&apos;" element1="/Led_toggle/Src/platform_types" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1700145624998"/>
+</session>
