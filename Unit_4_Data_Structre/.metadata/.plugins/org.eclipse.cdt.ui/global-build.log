@@ -1,0 +1,214 @@
+17:22:40 **** Rebuild of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:22:1: warning: data definition has no type or storage class
+ AddStudent();
+ ^~~~~~~~~~
+..\main.c:22:1: warning: type defaults to 'int' in declaration of 'AddStudent' [-Wimplicit-int]
+..\main.c:23:1: warning: data definition has no type or storage class
+ delete_student();
+ ^~~~~~~~~~~~~~
+..\main.c:23:1: warning: type defaults to 'int' in declaration of 'delete_student' [-Wimplicit-int]
+..\main.c:24:1: warning: data definition has no type or storage class
+ view_students();
+ ^~~~~~~~~~~~~
+..\main.c:24:1: warning: type defaults to 'int' in declaration of 'view_students' [-Wimplicit-int]
+..\main.c:25:1: warning: data definition has no type or storage class
+ DeleteAll();
+ ^~~~~~~~~
+..\main.c:25:1: warning: type defaults to 'int' in declaration of 'DeleteAll' [-Wimplicit-int]
+..\main.c:26:1: warning: data definition has no type or storage class
+ GetNth();
+ ^~~~~~
+..\main.c:26:1: warning: type defaults to 'int' in declaration of 'GetNth' [-Wimplicit-int]
+..\main.c:27:1: warning: data definition has no type or storage class
+ GetCount();
+ ^~~~~~~~
+..\main.c:27:1: warning: type defaults to 'int' in declaration of 'GetCount' [-Wimplicit-int]
+..\main.c:28:1: warning: data definition has no type or storage class
+ GetMid();
+ ^~~~~~
+..\main.c:28:1: warning: type defaults to 'int' in declaration of 'GetMid' [-Wimplicit-int]
+..\main.c:30:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c:97:6: error: conflicting types for 'AddStudent'
+ void AddStudent()
+      ^~~~~~~~~~
+..\main.c:22:1: note: previous declaration of 'AddStudent' was here
+ AddStudent();
+ ^~~~~~~~~~
+..\main.c:194:6: error: conflicting types for 'view_students'
+ void view_students()
+      ^~~~~~~~~~~~~
+..\main.c:24:1: note: previous declaration of 'view_students' was here
+ view_students();
+ ^~~~~~~~~~~~~
+..\main.c:217:6: error: conflicting types for 'DeleteAll'
+ void DeleteAll()
+      ^~~~~~~~~
+..\main.c:25:1: note: previous declaration of 'DeleteAll' was here
+ DeleteAll();
+ ^~~~~~~~~
+..\main.c: In function 'DeleteAll':
+..\main.c:220:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:237:6: error: conflicting types for 'GetNth'
+ void GetNth()
+      ^~~~~~
+..\main.c:26:1: note: previous declaration of 'GetNth' was here
+ GetNth();
+ ^~~~~~
+..\main.c:272:6: error: conflicting types for 'GetCount'
+ void GetCount()
+      ^~~~~~~~
+..\main.c:27:1: note: previous declaration of 'GetCount' was here
+ GetCount();
+ ^~~~~~~~
+..\main.c:284:6: error: conflicting types for 'GetMid'
+ void GetMid()
+      ^~~~~~
+..\main.c:28:1: note: previous declaration of 'GetMid' was here
+ GetMid();
+ ^~~~~~
+17:23:11 **** Incremental Build of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:23:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:44:4: warning: implicit declaration of function 'AddStudent' [-Wimplicit-function-declaration]
+    AddStudent();
+    ^~~~~~~~~~
+..\main.c:47:4: warning: implicit declaration of function 'delete_student' [-Wimplicit-function-declaration]
+    delete_student();
+    ^~~~~~~~~~~~~~
+..\main.c:50:4: warning: implicit declaration of function 'view_students' [-Wimplicit-function-declaration]
+    view_students();
+    ^~~~~~~~~~~~~
+..\main.c:53:4: warning: implicit declaration of function 'DeleteAll' [-Wimplicit-function-declaration]
+    DeleteAll();
+    ^~~~~~~~~
+..\main.c:56:4: warning: implicit declaration of function 'GetNth' [-Wimplicit-function-declaration]
+    GetNth();
+    ^~~~~~
+..\main.c:59:4: warning: implicit declaration of function 'GetCount' [-Wimplicit-function-declaration]
+    GetCount();
+    ^~~~~~~~
+..\main.c:62:4: warning: implicit declaration of function 'GetMid' [-Wimplicit-function-declaration]
+    GetMid();
+    ^~~~~~
+..\main.c: At top level:
+..\main.c:90:6: warning: conflicting types for 'AddStudent'
+ void AddStudent()
+      ^~~~~~~~~~
+..\main.c:44:4: note: previous implicit declaration of 'AddStudent' was here
+    AddStudent();
+    ^~~~~~~~~~
+..\main.c:187:6: warning: conflicting types for 'view_students'
+ void view_students()
+      ^~~~~~~~~~~~~
+..\main.c:50:4: note: previous implicit declaration of 'view_students' was here
+    view_students();
+    ^~~~~~~~~~~~~
+..\main.c:210:6: warning: conflicting types for 'DeleteAll'
+ void DeleteAll()
+      ^~~~~~~~~
+..\main.c:53:4: note: previous implicit declaration of 'DeleteAll' was here
+    DeleteAll();
+    ^~~~~~~~~
+..\main.c: In function 'DeleteAll':
+..\main.c:213:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:230:6: warning: conflicting types for 'GetNth'
+ void GetNth()
+      ^~~~~~
+..\main.c:56:4: note: previous implicit declaration of 'GetNth' was here
+    GetNth();
+    ^~~~~~
+..\main.c:265:6: warning: conflicting types for 'GetCount'
+ void GetCount()
+      ^~~~~~~~
+..\main.c:59:4: note: previous implicit declaration of 'GetCount' was here
+    GetCount();
+    ^~~~~~~~
+..\main.c:277:6: warning: conflicting types for 'GetMid'
+ void GetMid()
+      ^~~~~~
+..\main.c:62:4: note: previous implicit declaration of 'GetMid' was here
+    GetMid();
+    ^~~~~~
+gcc -o Linkedlist_Student_project.exe main.o 
+Info: Nothing to build for Linkedlist_Student_project
+17:23:46 **** Incremental Build of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:162:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:258:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o Linkedlist_Student_project.exe main.o 
+17:24:12 **** Incremental Build of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:257:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o Linkedlist_Student_project.exe main.o 
+17:24:29 **** Incremental Build of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linkedlist_Student_project.exe main.o 
+Info: Nothing to build for Linkedlist_Student_project
+Info: Nothing to build for Linkedlist_Student_project
+17:39:36 **** Incremental Build of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linkedlist_Student_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Linkedlist_Student_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:42:31 **** Incremental Build of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -o Linkedlist_Student_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Linkedlist_Student_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for fifo
+17:42:31 **** Rebuild of configuration Debug for project lifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:18:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:27:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:12:0:
+..\lifo.h:41:13: note: expected 'uint32_t * {aka unsigned int *}' but argument is of type 'uint32_t {aka unsigned int}'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,element_type* buf, unsigned int length);
+             ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o lifo.exe lifo.o main.o 
+17:44:02 **** Incremental Build of configuration Debug for project Linkedlist_Student_project ****
+Info: Internal Builder is used for build
+gcc -o Linkedlist_Student_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Linkedlist_Student_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:44:02 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o fifo.exe fifo.o main.o 
+Info: Nothing to build for lifo
