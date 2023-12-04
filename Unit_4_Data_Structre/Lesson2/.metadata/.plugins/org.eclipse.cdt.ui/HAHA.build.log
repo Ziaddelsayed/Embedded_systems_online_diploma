@@ -1,0 +1,8 @@
+16:11:47 **** Incremental Build of configuration Debug for project HAHA ****
+Info: Internal Builder is used for build
+gcc -o HAHA.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file HAHA.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+16:11:47 Build Finished (took 171ms)
+

@@ -1,0 +1,8 @@
+16:11:48 **** Incremental Build of configuration Debug for project pppp ****
+Info: Internal Builder is used for build
+gcc -o pppp.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file pppp.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+16:11:48 Build Finished (took 150ms)
+

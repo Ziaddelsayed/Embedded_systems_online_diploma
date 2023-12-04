@@ -1,0 +1,20 @@
+/*
+ * CA.h
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: ziade
+ */
+
+#ifndef CA_H_
+#define CA_H_
+
+
+//Define states
+enum {
+	CA_waiting,
+	CA_driving
+}CA_state_id;
+
+
+
+#endif /* CA_H_ */

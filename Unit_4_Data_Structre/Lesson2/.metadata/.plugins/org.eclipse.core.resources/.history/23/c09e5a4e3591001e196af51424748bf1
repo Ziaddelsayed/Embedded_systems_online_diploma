@@ -1,0 +1,12 @@
+/*
+ * CA.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: ziade
+ */
+
+//variables
+
+int CA_speed=0;
+int CA_distance=0;
+int CA_threshold=50;

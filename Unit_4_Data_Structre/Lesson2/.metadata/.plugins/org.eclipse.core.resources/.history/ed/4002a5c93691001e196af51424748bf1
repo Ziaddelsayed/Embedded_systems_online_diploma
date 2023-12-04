@@ -1,0 +1,16 @@
+/*
+ * state.h
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: ziade
+ */
+
+#ifndef STATE_H_
+#define STATE_H_
+
+//Automatic state function generated
+#define STATE_define(_statFUN_) void ST__statFUN_()
+
+
+
+#endif /* STATE_H_ */

@@ -1,0 +1,29 @@
+/*
+ * DC_Motor.c
+ *
+ *  Created on: Dec 3, 2023
+ *      Author: ziade
+ */
+
+
+#include "DC_Motor.h"
+
+
+
+
+
+
+
+
+
+
+
+
+STATE_define(DC_idle)
+{
+
+}
+STATE_define(DC_busy)
+{
+
+}

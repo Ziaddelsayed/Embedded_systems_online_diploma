@@ -1,0 +1,30 @@
+/*
+ * CA.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: ziade
+ */
+
+//variables
+#include "CA.h"
+
+int CA_speed=0;
+int CA_distance=0;
+int CA_threshold=50;
+
+//state pointer to function
+void (*CA_state)();
+
+STATE_define(CA_waiting)
+{
+	//State Name
+	CA
+	//State Action
+
+
+}
+STATE_define(CA_driving)
+{
+
+
+}

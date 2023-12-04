@@ -1,0 +1,13 @@
+/*
+ * US_Sensor.c
+ *
+ *  Created on: Dec 3, 2023
+ *      Author: ziade
+ */
+
+#include "US_Sensor.h"
+
+void US_init()
+{
+	//init US_Sensor & call  drivers
+}

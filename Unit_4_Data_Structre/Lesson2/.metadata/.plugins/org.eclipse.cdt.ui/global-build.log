@@ -1,0 +1,2379 @@
+09:14:52 **** Rebuild of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:22:23: warning: passing argument 2 of 'LIFO_init' makes integer from pointer without a cast [-Wint-conversion]
+  LIFO_init(&uart_lifo,buffer1,5);
+                       ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:30:13: note: expected 'unsigned int' but argument is of type 'unsigned int *'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,unsigned int buf, unsigned int length);
+             ^~~~~~~~~
+..\main.c:31:31: warning: passing argument 2 of 'LIFO_get_item' makes integer from pointer without a cast [-Wint-conversion]
+   if(LIFO_get_item(&uart_lifo,&temp)== LIFO_no_error)
+                               ^
+In file included from ..\main.c:9:0:
+..\lifo.h:29:13: note: expected 'unsigned int' but argument is of type 'int *'
+ LIFO_status LIFO_get_item (LIFO_Buf_t* lifo_buf ,unsigned int item);//pop
+             ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+..\lifo.c: In function 'LIFO_get_item':
+..\lifo.c:45:2: error: invalid type argument of unary '*' (have 'unsigned int')
+  *item = *(lifo_buf->head);
+  ^~~~~
+..\lifo.c: In function 'LIFO_init':
+..\lifo.c:54:9: warning: comparison between pointer and integer
+  if(buf == NULL)
+         ^~
+..\lifo.c:56:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  lifo_buf ->base=buf;
+                 ^
+..\lifo.c:57:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  lifo_buf ->head=buf;
+                 ^
+09:17:11 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:24:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:30:13: note: expected 'unsigned int *' but argument is of type 'unsigned int'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,unsigned int* buf, unsigned int length);
+             ^~~~~~~~~
+..\main.c:31:31: warning: pointer targets in passing argument 2 of 'LIFO_get_item' differ in signedness [-Wpointer-sign]
+   if(LIFO_get_item(&uart_lifo,&temp)== LIFO_no_error)
+                               ^
+In file included from ..\main.c:9:0:
+..\lifo.h:29:13: note: expected 'unsigned int *' but argument is of type 'int *'
+ LIFO_status LIFO_get_item (LIFO_Buf_t* lifo_buf ,unsigned int* item);//pop
+             ^~~~~~~~~~~~~
+gcc -o LIFO.exe lifo.o main.o 
+Info: Nothing to build for LIFO
+09:19:01 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:24:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:30:13: note: expected 'unsigned int *' but argument is of type 'unsigned int'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,unsigned int* buf, unsigned int length);
+             ^~~~~~~~~
+..\main.c:31:31: warning: pointer targets in passing argument 2 of 'LIFO_get_item' differ in signedness [-Wpointer-sign]
+   if(LIFO_get_item(&uart_lifo,&temp)== LIFO_no_error)
+                               ^
+In file included from ..\main.c:9:0:
+..\lifo.h:29:13: note: expected 'unsigned int *' but argument is of type 'int *'
+ LIFO_status LIFO_get_item (LIFO_Buf_t* lifo_buf ,unsigned int* item);//pop
+             ^~~~~~~~~~~~~
+gcc -o LIFO.exe lifo.o main.o 
+10:52:51 **** Rebuild of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:24:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:30:13: note: expected 'unsigned int *' but argument is of type 'unsigned int'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,unsigned int* buf, unsigned int length);
+             ^~~~~~~~~
+..\main.c:31:31: warning: pointer targets in passing argument 2 of 'LIFO_get_item' differ in signedness [-Wpointer-sign]
+   if(LIFO_get_item(&uart_lifo,&temp)== LIFO_no_error)
+                               ^
+In file included from ..\main.c:9:0:
+..\lifo.h:29:13: note: expected 'unsigned int *' but argument is of type 'int *'
+ LIFO_status LIFO_get_item (LIFO_Buf_t* lifo_buf ,unsigned int* item);//pop
+             ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+10:52:52 **** Rebuild of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_dequeue':
+..\fifo.c:54:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  *item = fifo->tail;
+        ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:13:15: error: incompatible type for argument 1 of 'FIFO_init'
+  if(FIFO_init(FIFO_UART,UART_buffer,5) == FIFO_no_error)
+               ^~~~~~~~~
+In file included from ..\main.c:7:0:
+..\fifo.h:41:18: note: expected 'FIFO_Buf_t * {aka struct <anonymous> *}' but argument is of type 'FIFO_Buf_t {aka struct <anonymous>}'
+ FIFO_Buf_Status  FIFO_init(FIFO_Buf_t* fifo,element_type* buff,uint32_t length);
+                  ^~~~~~~~~
+Info: Nothing to build for LIFO
+Info: Nothing to build for LIFO
+11:06:52 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:6: error: 'i' undeclared (first use in this function)
+  for(i=0;i<7;i++)
+      ^
+..\main.c:14:6: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:24:30: error: 'temp' undeclared (first use in this function)
+  if(FIFO_dequeue(&FIFO_UART,&temp) == FIFO_no_error)
+                              ^~~~
+Info: Nothing to build for LIFO
+11:07:46 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_dequeue':
+..\fifo.c:54:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  *item = fifo->tail;
+        ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:6: error: 'i' undeclared (first use in this function)
+  for(i=0;i<7;i++)
+      ^
+..\main.c:14:6: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:24:30: error: 'temp' undeclared (first use in this function)
+  if(FIFO_dequeue(&FIFO_UART,&temp) == FIFO_no_error)
+                              ^~~~
+Info: Nothing to build for LIFO
+11:08:46 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:6: error: 'i' undeclared (first use in this function)
+  for(i=0;i<7;i++)
+      ^
+..\main.c:14:6: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:24:30: error: 'temp' undeclared (first use in this function)
+  if(FIFO_dequeue(&FIFO_UART,&temp) == FIFO_no_error)
+                              ^~~~
+Info: Nothing to build for LIFO
+11:08:55 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:6: error: 'i' undeclared (first use in this function)
+  for(i=0;i<7;i++)
+      ^
+..\main.c:14:6: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:24:30: error: 'temp' undeclared (first use in this function)
+  if(FIFO_dequeue(&FIFO_UART,&temp) == FIFO_no_error)
+                              ^~~~
+Info: Nothing to build for LIFO
+11:09:57 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:6: error: 'i' undeclared (first use in this function)
+  for(i=0;i<7;i++)
+      ^
+..\main.c:14:6: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:24:30: error: 'temp' undeclared (first use in this function)
+  if(FIFO_dequeue(&FIFO_UART,&temp) == FIFO_no_error)
+                              ^~~~
+Info: Nothing to build for LIFO
+11:11:05 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:14:6: error: 'i' undeclared (first use in this function)
+  for(i=0;i<7;i++)
+      ^
+..\main.c:14:6: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:24:30: error: 'temp' undeclared (first use in this function)
+  if(FIFO_dequeue(&FIFO_UART,&temp) == FIFO_no_error)
+                              ^~~~
+Info: Nothing to build for LIFO
+11:15:33 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o fifo.exe fifo.o main.o 
+Info: Nothing to build for fifo
+11:16:44 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o fifo.exe fifo.o main.o 
+Info: Nothing to build for LIFO
+11:19:13 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o fifo.exe fifo.o main.o 
+Info: Nothing to build for fifo
+Info: Nothing to build for LIFO
+11:22:56 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o fifo.exe fifo.o main.o 
+Info: Nothing to build for fifo
+11:24:36 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o fifo.exe fifo.o main.o 
+11:24:53 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o fifo.exe fifo.o main.o 
+11:29:36 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o fifo.exe fifo.o main.o 
+18:13:07 **** Rebuild of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:24:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:30:13: note: expected 'unsigned int *' but argument is of type 'unsigned int'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,unsigned int* buf, unsigned int length);
+             ^~~~~~~~~
+..\main.c:31:31: warning: pointer targets in passing argument 2 of 'LIFO_get_item' differ in signedness [-Wpointer-sign]
+   if(LIFO_get_item(&uart_lifo,&temp)== LIFO_no_error)
+                               ^
+In file included from ..\main.c:9:0:
+..\lifo.h:29:13: note: expected 'unsigned int *' but argument is of type 'int *'
+ LIFO_status LIFO_get_item (LIFO_Buf_t* lifo_buf ,unsigned int* item);//pop
+             ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+18:13:09 **** Rebuild of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o fifo.exe fifo.o main.o 
+18:13:10 **** Rebuild of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'AddStudent':
+..\main.c:67:2: warning: implicit declaration of function 'peintf' [-Wimplicit-function-declaration]
+  peintf("\n Enter the ID:");
+  ^~~~~~
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe main.o 
+main.o: In function `AddStudent':
+D:\zzzz\linked_list_students_project\Debug/../main.c:67: undefined reference to `peintf'
+D:\zzzz\linked_list_students_project\Debug/../main.c:71: undefined reference to `peintf'
+D:\zzzz\linked_list_students_project\Debug/../main.c:75: undefined reference to `peintf'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+18:13:44 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe main.o 
+18:18:37 **** Rebuild of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:24:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:30:13: note: expected 'unsigned int *' but argument is of type 'unsigned int'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,unsigned int* buf, unsigned int length);
+             ^~~~~~~~~
+..\main.c:31:31: warning: pointer targets in passing argument 2 of 'LIFO_get_item' differ in signedness [-Wpointer-sign]
+   if(LIFO_get_item(&uart_lifo,&temp)== LIFO_no_error)
+                               ^
+In file included from ..\main.c:9:0:
+..\lifo.h:29:13: note: expected 'unsigned int *' but argument is of type 'int *'
+ LIFO_status LIFO_get_item (LIFO_Buf_t* lifo_buf ,unsigned int* item);//pop
+             ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+18:18:38 **** Rebuild of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o fifo.exe fifo.o main.o 
+18:18:39 **** Rebuild of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:26:2: error: unknown type name 'flaot'
+  flaot height ;
+  ^~~~~
+..\main.c: In function 'AddStudent':
+..\main.c:67:2: warning: implicit declaration of function 'peintf' [-Wimplicit-function-declaration]
+  peintf("\n Enter the ID:");
+  ^~~~~~
+..\main.c: In function 'view_students':
+..\main.c:149:22: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+    printf("\n \t ID:%f",pCurrentStudent->student.height);
+                      ^
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:192:3: error: expected ';' before 'printf'
+   printf("\n==================");
+   ^~~~~~
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+18:19:28 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe main.o 
+Info: Nothing to build for linked_list_students_project
+19:38:15 **** Rebuild of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:24:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:30:13: note: expected 'unsigned int *' but argument is of type 'unsigned int'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,unsigned int* buf, unsigned int length);
+             ^~~~~~~~~
+..\main.c:31:31: warning: pointer targets in passing argument 2 of 'LIFO_get_item' differ in signedness [-Wpointer-sign]
+   if(LIFO_get_item(&uart_lifo,&temp)== LIFO_no_error)
+                               ^
+In file included from ..\main.c:9:0:
+..\lifo.h:29:13: note: expected 'unsigned int *' but argument is of type 'int *'
+ LIFO_status LIFO_get_item (LIFO_Buf_t* lifo_buf ,unsigned int* item);//pop
+             ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+19:38:17 **** Rebuild of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o fifo.exe fifo.o main.o 
+19:38:17 **** Rebuild of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe main.o 
+Info: Nothing to build for linked_list_students_project
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+19:46:56 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fn_linkedlist.o "..\\fn_linkedlist.c" 
+..\fn_linkedlist.c: In function 'DeleteAll':
+..\fn_linkedlist.c:143:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:23:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe fn_linkedlist.o main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+19:47:46 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe fn_linkedlist.o main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:47:53 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -o linked_list_students_project.exe fn_linkedlist.o main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+19:49:21 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:49:26 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+19:49:41 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -o linked_list_students_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:49:49 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:178:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_students_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+19:51:56 **** Rebuild of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:158:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:176:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_Students.exe main.o 
+19:51:56 **** Incremental Build of configuration Debug for project linked_list_students_project ****
+Info: Internal Builder is used for build
+gcc -o linked_list_students_project.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_students_project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for linked_list_Students
+20:22:45 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:24:22: warning: passing argument 2 of 'LIFO_init' makes pointer from integer without a cast [-Wint-conversion]
+  LIFO_init(&I2c_lifo,buffer2,5);
+                      ^~~~~~~
+In file included from ..\main.c:9:0:
+..\lifo.h:41:13: note: expected 'uint32_t * {aka unsigned int *}' but argument is of type 'uint32_t {aka unsigned int}'
+ LIFO_status LIFO_init (LIFO_Buf_t* lifo_buf ,element_type* buf, unsigned int length);
+             ^~~~~~~~~
+gcc -o LIFO.exe lifo.o main.o 
+lifo.o: In function `LIFO_Add_item':
+D:\zzzz\LIFO\Debug/../lifo.c:23: undefined reference to `LIFO_IS_FULL'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for fifo
+20:22:45 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:158:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:176:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:23:04 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -o LIFO.exe lifo.o main.o 
+lifo.o: In function `LIFO_Add_item':
+D:\zzzz\LIFO\Debug/../lifo.c:23: undefined reference to `LIFO_IS_FULL'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for fifo
+20:23:04 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:23:48 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+Info: Nothing to build for fifo
+20:23:48 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+20:36:47 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+Info: Nothing to build for linked_list_Students
+Info: Nothing to build for LIFO
+14:02:54 **** Incremental Build of configuration Debug for project fifo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o fifo.exe fifo.o main.o 
+Info: Nothing to build for linked_list_Students
+Info: Nothing to build for fifo
+14:11:29 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+Info: Nothing to build for fifo
+Info: Nothing to build for linked_list_Students
+Info: Nothing to build for LIFO
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+15:15:30 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: In function 'GetNth':
+..\main.c:199:19: warning: statement with no effect [-Wunused-value]
+    pCurrentStudent->PNextStudent;
+    ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:206:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'GetNth':
+..\main.c:204:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o linked_list_Students.exe main.o 
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+Info: Nothing to build for linked_list_Students
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+Info: Nothing to build for linked_list_Students
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+15:16:43 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:205:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_Students.exe main.o 
+Info: Nothing to build for linked_list_Students
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+15:27:20 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:160:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:216:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:27:29 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+15:29:26 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:29:27 **** Rebuild of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:168:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:224:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o lol.exe main.o 
+15:29:32 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for lol
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+15:32:20 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:32:21 **** Incremental Build of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:168:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:221:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o lol.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file lol.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+15:48:48 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:48:48 **** Incremental Build of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:168:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:232:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o lol.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file lol.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:48:49 **** Rebuild of configuration Debug for project pppp ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:176:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:239:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o pppp.exe main.o 
+Info: Nothing to build for pppp
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+15:57:27 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:57:28 **** Incremental Build of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -o lol.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file lol.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:57:28 **** Incremental Build of configuration Debug for project pppp ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:176:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:242:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o pppp.exe main.o 
+Info: Nothing to build for pppp
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+16:08:27 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:08:28 **** Incremental Build of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -o lol.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file lol.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:08:28 **** Incremental Build of configuration Debug for project pppp ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:176:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:273:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o pppp.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file pppp.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:09:12 **** Rebuild of configuration Debug for project HAHA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:184:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:279:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HAHA.exe main.o 
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+16:09:12 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:09:12 **** Incremental Build of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -o lol.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file lol.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:09:13 **** Incremental Build of configuration Debug for project pppp ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:176:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:271:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o pppp.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file pppp.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:09:19 **** Incremental Build of configuration Debug for project pppp ****
+Info: Internal Builder is used for build
+gcc -o pppp.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file pppp.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for HAHA
+16:11:15 **** Incremental Build of configuration Debug for project HAHA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:184:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:280:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HAHA.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file HAHA.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:11:47 **** Incremental Build of configuration Debug for project HAHA ****
+Info: Internal Builder is used for build
+gcc -o HAHA.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file HAHA.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for LIFO
+Info: Nothing to build for fifo
+16:11:48 **** Rebuild of configuration Debug for project iiii ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:192:6: warning: unused variable 'count' [-Wunused-variable]
+  int count=0;
+      ^~~~~
+..\main.c: At top level:
+..\main.c:288:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o iiii.exe main.o 
+16:11:48 **** Incremental Build of configuration Debug for project linked_list_Students ****
+Info: Internal Builder is used for build
+gcc -o linked_list_Students.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file linked_list_Students.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:11:48 **** Incremental Build of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -o lol.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file lol.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:11:48 **** Incremental Build of configuration Debug for project pppp ****
+Info: Internal Builder is used for build
+gcc -o pppp.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file pppp.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for iiii
+19:50:13 **** Rebuild of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:30:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:30:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c:32:2: warning: implicit declaration of function 'ptintf' [-Wimplicit-function-declaration]
+  ptintf("CA_waiting state: distance=%d speed=%d \n",CA_distance,CA_speed);
+  ^~~~~~
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:46:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:63:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+19:55:27 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:32:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:32:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c:34:2: warning: implicit declaration of function 'ptintf' [-Wimplicit-function-declaration]
+  ptintf("CA_waiting state: distance=%d speed=%d \n",CA_distance,CA_speed);
+  ^~~~~~
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:48:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:48:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+19:55:30 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:32:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:32:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c:34:2: warning: implicit declaration of function 'ptintf' [-Wimplicit-function-declaration]
+  ptintf("CA_waiting state: distance=%d speed=%d \n",CA_distance,CA_speed);
+  ^~~~~~
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:48:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:48:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+19:55:45 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: error: void value not ignored as it ought to be
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+19:56:05 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:32:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:32:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:48:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:48:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+19:56:14 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:18:11: error: void value not ignored as it ought to be
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+19:57:06 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:18:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:21:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:32:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:32:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:48:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:48:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o CA.exe CA.o main.o 
+19:58:12 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: error: void value not ignored as it ought to be
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+19:58:18 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: error: void value not ignored as it ought to be
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+19:58:46 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:31:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:47:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o CA.exe CA.o main.o 
+20:11:44 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: error: void value not ignored as it ought to be
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+20:12:36 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:31:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:47:74: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+20:13:13 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:31:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:47:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o CA.exe CA.o main.o 
+09:35:16 **** Rebuild of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+In file included from ..\US_Sensor.h:10:0,
+                 from ..\US_Sensor.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: error: void value not ignored as it ought to be
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:36:09 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\main.c:7:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\main.c: In function 'setup':
+..\main.c:19:10: error: void value not ignored as it ought to be
+  CA_state=STATE(CA_waiting);
+          ^
+..\main.c:20:10: error: void value not ignored as it ought to be
+  US_state=STATE(US_busy);
+          ^
+..\main.c:21:10: error: void value not ignored as it ought to be
+  DC_state=STATE(DC_idle);
+          ^
+..\main.c: At top level:
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+09:36:19 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+In file included from ..\US_Sensor.h:10:0,
+                 from ..\US_Sensor.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: error: void value not ignored as it ought to be
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:37:00 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC_Motor.o "..\\DC_Motor.c" 
+In file included from ..\DC_Motor.h:11:0,
+                 from ..\DC_Motor.c:9:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\DC_Motor.c:19:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ DC_Motor_Set(int s)
+ ^~~~~~~~~~~~
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:22:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_busy);
+          ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:32:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:40:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+In file included from ..\US_Sensor.h:10:0,
+                 from ..\US_Sensor.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c:17:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ US_Distance_Set(int d)
+ ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                           ^
+..\CA.c:20:63: error: expected ')' before ':' token
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                                               ^
+..\CA.c:23:1: error: expected ':' before '}' token
+ }
+ ^
+..\CA.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:37:29 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\main.c:7:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\main.c: In function 'setup':
+..\main.c:19:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state=STATE(CA_waiting);
+          ^
+..\main.c:20:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\main.c:21:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\main.c: At top level:
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c:17:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ US_Distance_Set(int d)
+ ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                           ^
+..\CA.c:20:63: error: expected ')' before ':' token
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                                               ^
+..\CA.c:23:1: error: expected ':' before '}' token
+ }
+ ^
+..\CA.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:38:30 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c:17:6: error: conflicting types for 'US_Distance_Set'
+ void US_Distance_Set(int d)
+      ^~~~~~~~~~~~~~~
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: note: previous declaration of 'US_Distance_Set' was here
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                           ^
+..\CA.c:20:63: error: expected ')' before ':' token
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                                               ^
+..\CA.c:23:1: error: expected ':' before '}' token
+ }
+ ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:38:42 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c:17:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ US_Distance_Set(int d)
+ ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                           ^
+..\CA.c:20:63: error: expected ')' before ':' token
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting) : (CA_state= STATE(CA_driving));
+                                                               ^
+..\CA.c:23:1: error: expected ':' before '}' token
+ }
+ ^
+..\CA.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:39:53 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+In file included from ..\CA.h:10:0,
+                 from ..\main.c:7:
+..\state.h:17:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:17:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:18:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:18:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\main.c: In function 'setup':
+..\main.c:17:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:10:0,
+                 from ..\CA.c:9:
+..\state.h:17:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:17:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:18:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:18:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:31:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:47:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o CA.exe CA.o main.o 
+09:39:53 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c:17:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ US_Distance_Set(int d)
+ ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:20:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Collision_Avoidance.exe CA.o DC_Motor.o US_Sensor.o main.o 
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+09:59:04 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC_Motor.o "..\\DC_Motor.c" 
+In file included from ..\DC_Motor.h:11:0,
+                 from ..\DC_Motor.c:9:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\DC_Motor.c:19:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ DC_Motor_Set(int s)
+ ^~~~~~~~~~~~
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:22:10: error: void value not ignored as it ought to be
+  DC_state=STATE(DC_busy);
+          ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:32:10: error: void value not ignored as it ought to be
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:40:10: error: void value not ignored as it ought to be
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+09:59:54 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c:17:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ US_Distance_Set(int d)
+ ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:20:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC_Motor.o "..\\DC_Motor.c" 
+In file included from ..\DC_Motor.h:11:0,
+                 from ..\DC_Motor.c:9:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\DC_Motor.c:19:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ DC_Motor_Set(int s)
+ ^~~~~~~~~~~~
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:22:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_busy);
+          ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:32:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:40:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\main.c:7:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\main.c: In function 'setup':
+..\main.c:19:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state=STATE(CA_waiting);
+          ^
+..\main.c:20:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\main.c:21:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\main.c: At top level:
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+In file included from ..\US_Sensor.h:10:0,
+                 from ..\US_Sensor.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Collision_Avoidance.exe CA.o DC_Motor.o US_Sensor.o main.o 
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+10:03:18 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:31:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:47:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o CA.exe CA.o main.o 
+10:04:47 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state =(void) STATE(CA_driving));
+                                           ^
+..\CA.c:31:80: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state =(void) STATE(CA_driving));
+                                                                                ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state = (void)STATE(CA_driving));
+                                           ^
+..\CA.c:47:80: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state = (void)STATE(CA_driving));
+                                                                                ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+10:04:50 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state =(void) STATE(CA_driving));
+                                           ^
+..\CA.c:31:80: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state =(void) STATE(CA_driving));
+                                                                                ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state = (void)STATE(CA_driving));
+                                           ^
+..\CA.c:47:80: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state = (void)STATE(CA_driving));
+                                                                                ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+10:04:53 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state =(void) STATE(CA_driving));
+                                           ^
+..\CA.c:31:80: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state =(void) STATE(CA_driving));
+                                                                                ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state = (void)STATE(CA_driving));
+                                           ^
+..\CA.c:47:80: error: void value not ignored as it ought to be
+  (CA_distance <= CA_threshold)? (CA_state =(void) STATE(CA_waiting)):(CA_state = (void)STATE(CA_driving));
+                                                                                ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+10:05:46 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state =(int) STATE(CA_waiting)):(CA_state =(int) STATE(CA_driving));
+                                           ^
+..\CA.c:31:79: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state =(int) STATE(CA_waiting)):(CA_state =(int) STATE(CA_driving));
+                                                                               ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state =(int) STATE(CA_waiting)):(CA_state = (int)STATE(CA_driving));
+                                           ^
+..\CA.c:47:79: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state =(int) STATE(CA_waiting)):(CA_state = (int)STATE(CA_driving));
+                                                                               ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o CA.exe CA.o main.o 
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+10:06:41 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state =(int) STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o CA.exe CA.o main.o 
+10:07:15 **** Incremental Build of configuration Debug for project CA ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:17:11: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state = STATE(CA_waiting);
+           ^
+..\main.c: At top level:
+..\main.c:20:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:31:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:31:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:47:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:47:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'US_Get_distance_random':
+..\CA.c:64:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o CA.exe CA.o main.o 
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+Info: Nothing to build for CA
+10:15:04 **** Rebuild of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC.o "..\\DC.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US.o "..\\US.c" 
+..\US.c: In function 'ST_US_busy':
+..\US.c:32:16: warning: implicit declaration of function 'US_GetDistanceRandom' [-Wimplicit-function-declaration]
+  US_Distance = US_GetDistanceRandom(45, 55, 1);
+                ^~~~~~~~~~~~~~~~~~~~
+..\US.c: In function 'US_GetDistanceRandom':
+..\US.c:44:19: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int rand_num = (rand() % (r - l + 1)) + l;
+                   ^~~~
+..\US.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o lol.exe CA.o DC.o US.o main.o 
+Info: Nothing to build for lol
+Info: Nothing to build for lol
+Info: Nothing to build for lol
+Info: Nothing to build for lol
+10:16:58 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\main.c:7:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\main.c: In function 'setup':
+..\main.c:19:10: error: void value not ignored as it ought to be
+  CA_state=STATE(CA_waiting);
+          ^
+..\main.c:20:10: error: void value not ignored as it ought to be
+  US_state=STATE(US_busy);
+          ^
+..\main.c:21:10: error: void value not ignored as it ought to be
+  DC_state=STATE(DC_idle);
+          ^
+..\main.c: At top level:
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+10:17:14 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\CA.c:17:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ US_Distance_Set(int d)
+ ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:20:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC_Motor.o "..\\DC_Motor.c" 
+In file included from ..\DC_Motor.h:11:0,
+                 from ..\DC_Motor.c:9:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\DC_Motor.c:19:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ DC_Motor_Set(int s)
+ ^~~~~~~~~~~~
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:22:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_busy);
+          ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:32:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:40:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+In file included from ..\CA.h:11:0,
+                 from ..\main.c:7:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\main.c: In function 'setup':
+..\main.c:19:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state=STATE(CA_waiting);
+          ^
+..\main.c:20:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\main.c:21:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\main.c: At top level:
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+In file included from ..\US_Sensor.h:10:0,
+                 from ..\US_Sensor.c:8:
+..\state.h:19:1: warning: data definition has no type or storage class
+ US_Distance_Set(int d);
+ ^~~~~~~~~~~~~~~
+..\state.h:19:1: warning: type defaults to 'int' in declaration of 'US_Distance_Set' [-Wimplicit-int]
+..\state.h:20:1: warning: data definition has no type or storage class
+ DC_Motor_Set(int s);
+ ^~~~~~~~~~~~
+..\state.h:20:1: warning: type defaults to 'int' in declaration of 'DC_Motor_Set' [-Wimplicit-int]
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Collision_Avoidance.exe CA.o DC_Motor.o US_Sensor.o main.o 
+Info: Nothing to build for Collision_Avoidance
+10:18:12 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c:17:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ US_Distance_Set(int d)
+ ^~~~~~~~~~~~~~~
+..\CA.c:17:1: warning: conflicting types for 'US_Distance_Set'
+In file included from ..\CA.h:11:0,
+                 from ..\CA.c:8:
+..\state.h:19:6: note: previous declaration of 'US_Distance_Set' was here
+ void US_Distance_Set(int d);
+      ^~~~~~~~~~~~~~~
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:20:43: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                           ^
+..\CA.c:20:74: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  (CA_distance <= CA_threshold)? (CA_state = STATE(CA_waiting)):(CA_state = STATE(CA_driving));
+                                                                          ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC_Motor.o "..\\DC_Motor.c" 
+..\DC_Motor.c:19:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ DC_Motor_Set(int s)
+ ^~~~~~~~~~~~
+..\DC_Motor.c:19:1: warning: conflicting types for 'DC_Motor_Set'
+In file included from ..\DC_Motor.h:11:0,
+                 from ..\DC_Motor.c:9:
+..\state.h:20:6: note: previous declaration of 'DC_Motor_Set' was here
+ void DC_Motor_Set(int s);
+      ^~~~~~~~~~~~
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:22:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_busy);
+          ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:32:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:40:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:19:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state=STATE(CA_waiting);
+          ^
+..\main.c:20:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\main.c:21:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\main.c: At top level:
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o Collision_Avoidance.exe CA.o DC_Motor.o US_Sensor.o main.o 
+Info: Nothing to build for lol
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+07:44:16 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'setup':
+..\main.c:19:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  CA_state=STATE(CA_waiting);
+          ^
+..\main.c:20:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\main.c:21:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\main.c: At top level:
+..\main.c:24:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC_Motor.o "..\\DC_Motor.c" 
+..\DC_Motor.c: In function 'DC_Motor_Set':
+..\DC_Motor.c:22:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_busy);
+          ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:40:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  DC_state=STATE(DC_idle);
+          ^
+..\DC_Motor.c: In function 'ST_DC_idle':
+..\DC_Motor.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\DC_Motor.c: In function 'ST_DC_busy':
+..\DC_Motor.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+..\CA.c: In function 'US_Distance_Set':
+..\CA.c:22:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   CA_state = STATE(CA_waiting);
+            ^
+..\CA.c:25:13: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    CA_state = STATE(CA_driving);
+             ^
+..\CA.c: In function 'ST_CA_waiting':
+..\CA.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\CA.c: In function 'ST_CA_driving':
+..\CA.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Collision_Avoidance.exe CA.o DC_Motor.o US_Sensor.o main.o 
+Info: Nothing to build for Collision_Avoidance
+Info: Nothing to build for Collision_Avoidance
+07:46:06 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Collision_Avoidance.exe CA.o DC_Motor.o US_Sensor.o main.o 
+Info: Nothing to build for Collision_Avoidance
+07:57:31 **** Incremental Build of configuration Debug for project Collision_Avoidance ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US_Sensor.o "..\\US_Sensor.c" 
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:42:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  US_state=STATE(US_busy);
+          ^
+..\US_Sensor.c: In function 'randValues':
+..\US_Sensor.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\US_Sensor.c: In function 'ST_US_busy':
+..\US_Sensor.c:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o Collision_Avoidance.exe CA.o DC_Motor.o US_Sensor.o main.o 
+07:57:33 **** Rebuild of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC.o "..\\DC.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US.o "..\\US.c" 
+..\US.c: In function 'ST_US_busy':
+..\US.c:32:16: warning: implicit declaration of function 'US_GetDistanceRandom' [-Wimplicit-function-declaration]
+  US_Distance = US_GetDistanceRandom(45, 55, 1);
+                ^~~~~~~~~~~~~~~~~~~~
+..\US.c: In function 'US_GetDistanceRandom':
+..\US.c:44:19: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int rand_num = (rand() % (r - l + 1)) + l;
+                   ^~~~
+..\US.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o lol.exe CA.o DC.o US.o main.o 
+Info: Nothing to build for Collision_Avoidance

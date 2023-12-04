@@ -1,0 +1,217 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 30, 2023
+ *      Author: ziade
+ */
+
+
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "conio.h"
+
+#define DPRINTF(...)		{fflush(stdout);\
+							fflush(stdin);\
+							printf(__VA_ARGS__);\
+							fflush(stdout);\
+							fflush(stdin);}
+
+//effective data
+typedef struct Sdata
+{
+	int ID ;
+	char name[40];
+	float height ;
+}Sdata_t;
+
+//linked list
+ struct SStudent
+ {
+ 	Sdata_t student;
+ 	struct SStudent* PNextStudent ;
+
+ };
+
+ struct SStudent* gpFirstStudent = NULL ;
+
+void AddStudent()
+{
+	struct SStudent* pNewStudent ;
+	struct SStudent* pLastStudent ;
+	char temp_text[40];
+	//check list is empty == yes
+	if(gpFirstStudent == NULL)
+	{
+		//crete record
+		pNewStudent =(struct SStudent*) malloc(sizeof(struct SStudent));
+		//assign it to gpFirstStudent
+		gpFirstStudent = pNewStudent ;
+	}
+	//check list is empty == NO
+	else
+	{
+		//navigate until reach yo the last record
+		pLastStudent = gpFirstStudent ;
+		while(pLastStudent->PNextStudent)
+			{
+				pLastStudent= pLastStudent->PNextStudent;
+			}
+		//crete record
+		pNewStudent =(struct SStudent*) malloc(sizeof(struct SStudent));
+		pLastStudent->PNextStudent=pNewStudent;
+	}
+
+	//fill new record
+	peintf("\n Enter the ID:");
+	gets(temp_text);
+	pNewStudent->student.ID = atoi(temp_text);
+
+	peintf("\n Enter Student full Name :");
+	gets(pNewStudent->student.name);
+
+
+	peintf("\n Enter the Height:");
+	gets(temp_text);
+	pNewStudent->student.height = atof(temp_text);
+
+
+
+	//set the next pointer (new_student) null
+	pNewStudent->PNextStudent=NULL;
+
+}
+
+int delete_student ()
+{
+	char temp_text[40];
+	unsigned int selected_id;
+
+	// get the selected ID
+	printf("\n Enter the Student ID to be deleted:\n");
+	gets(temp_text);
+	selected_id = atoi(temp_text);
+	// list is not empty
+	if(gpFirstStudent)
+	{
+		struct SStudent* pSelectedStudent = gpFirstStudent ;
+		struct SStudent* pPreviousStudent = NULL ;
+		//loop on all records
+		while(pSelectedStudent)
+		{
+
+			//compare each node with the selected ID
+			if(pSelectedStudent->student.ID == selected_id)
+			{
+				if (pPreviousStudent)// the first isn't selected ID
+				{
+					pPreviousStudent->PNextStudent=pSelectedStudent->PNextStudent;
+
+				}
+				else // 1st student==ID
+				{
+					gpFirstStudent = pSelectedStudent->PNextStudent ;
+
+				}
+				free(pSelectedStudent);
+				return 1;
+
+			}
+			pPreviousStudent = pSelectedStudent ;
+			pSelectedStudent = pSelectedStudent->PNextStudent;
+		}
+
+
+
+	}
+		printf("\n can't find student ID:\n");
+
+		return 0 ;
+
+}
+
+void view_students()
+{
+	struct SStudent* pCurrentStudent =gpFirstStudent ;
+	int count=0;
+	if(gpFirstStudent==NULL)
+	{
+		printf("\n Empty list");
+	}
+	else
+	{
+		while(pCurrentStudent)
+		{
+			printf("\n record number %d",count+1);
+			printf("\n \t ID:%d",pCurrentStudent->student.ID);
+			printf("\n \t ID:%s",pCurrentStudent->student.name);
+			printf("\n \t ID:%f",pCurrentStudent->student.height);
+			pCurrentStudent=pCurrentStudent->PNextStudent;
+			count++;
+		}
+	}
+
+}
+
+void DeleteAll()
+{
+	struct SStudent* pCurrentStudent =gpFirstStudent ;
+	int count=0;
+	if(gpFirstStudent==NULL)
+	{
+		printf("\n Empty list");
+	}
+	else
+	{
+		while(pCurrentStudent)
+		{
+			struct SStudent* pTempStudent =pCurrentStudent ;
+			pCurrentStudent=pCurrentStudent->PNextStudent;
+			free(pTempStudent);
+
+		}
+		gpFirstStudent=NULL;
+	}
+}
+
+void main ()
+{
+	char temp_text[40];
+	while(1)
+	{
+		printf("\n==============");
+		printf("\n\t Choose one of the following options\n");
+		printf("\n 1:AddStudent");
+		printf("\n 2:delete_student");
+		printf("\n view_students");
+		printf("\n DeleteAll");
+		printf("\n Enter an option number");
+
+		gets(temp_text);
+		printf("\n==================");
+		switch(atoi(temp_text))
+		{
+		case 1:
+			AddStudent();
+			break;
+		case 2:
+			delete_student();
+			break;
+		case 3:
+			view_students();
+			break;
+		case 4:
+			DeleteAll();
+			break;
+		default:
+			printf("\n wrong option");
+			break;
+		}
+	}
+
+}
+
+
+
+

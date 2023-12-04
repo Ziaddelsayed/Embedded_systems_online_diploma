@@ -1,0 +1,44 @@
+/*
+ * US_Sensor.c
+ *
+ *  Created on: Dec 3, 2023
+ *      Author: ziade
+ */
+
+#include "US_Sensor.h"
+
+extern void (*US_state)();
+
+//modules variables
+unsigned int distance;
+
+//generate random values
+int randValues (int l,int r,int count)
+{
+	int i;
+	for(i=0;i<count;i++)
+	{
+		int rand_num = (rand()%(r-l+1))+1;
+		return rand_num;
+	}
+}
+
+
+void US_init()
+{
+	//init US_Sensor & call  drivers
+	printf("US-----init \n");
+}
+
+STATE_define(US_busy)
+{
+	//state action
+	US_state_id= US_busy;
+	//read from US
+	distance=randValues(45,55,1);
+	printf("US_busy state : distance = %d\n",distance);
+
+	US_Distance_Set(distance);
+	US_state=STATE(US_busy);
+
+}

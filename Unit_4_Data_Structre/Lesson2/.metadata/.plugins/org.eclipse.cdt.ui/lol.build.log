@@ -1,0 +1,21 @@
+07:57:33 **** Rebuild of configuration Debug for project lol ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o DC.o "..\\DC.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o CA.o "..\\CA.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o US.o "..\\US.c" 
+..\US.c: In function 'ST_US_busy':
+..\US.c:32:16: warning: implicit declaration of function 'US_GetDistanceRandom' [-Wimplicit-function-declaration]
+  US_Distance = US_GetDistanceRandom(45, 55, 1);
+                ^~~~~~~~~~~~~~~~~~~~
+..\US.c: In function 'US_GetDistanceRandom':
+..\US.c:44:19: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int rand_num = (rand() % (r - l + 1)) + l;
+                   ^~~~
+..\US.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o lol.exe CA.o DC.o US.o main.o 
+
+07:57:41 Build Finished (took 8s.108ms)
+

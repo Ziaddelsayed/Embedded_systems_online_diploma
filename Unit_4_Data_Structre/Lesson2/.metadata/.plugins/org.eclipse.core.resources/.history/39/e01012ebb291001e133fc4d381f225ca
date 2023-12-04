@@ -1,0 +1,34 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 2, 2023
+ *      Author: ziade
+ */
+#include "CA.h"
+
+void setup()
+{
+
+	//init all the drivers
+	//init IRQ...
+	//init HAL US_Driver DC_Driver
+	//init Block
+	//set states pointer for each block
+	CA_state =(int) STATE(CA_waiting);
+}
+
+void main()
+{
+ 	volatile int d;
+	setup();
+
+	while(1)
+	{
+		//call state for each block
+		CA_state();
+		//delay
+		for(d=0; d<=1000 ;d++);
+	}
+}
+
+

@@ -1,0 +1,26 @@
+/*
+ * state.h
+ *
+ *  Created on: Dec 3, 2023
+ *      Author: ziade
+ */
+
+#ifndef STATE_H_
+#define STATE_H_
+#include "stdio.h"
+#include "stdlib.h"
+
+//Automatic state function generated
+#define STATE_define(_stateFun_) int ST_##_stateFun_()
+#define STATE(_stateFun_)  ST_##_stateFun_()
+
+//state connection
+
+US_Distance_Set(int d);
+DC_Motor_Set(int s);
+
+
+
+
+
+#endif /* STATE_H_ */

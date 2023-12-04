@@ -1,0 +1,26 @@
+/*
+ * US_Sensor.h
+ *
+ *  Created on: Dec 3, 2023
+ *      Author: ziade
+ */
+
+#ifndef US_SENSOR_H_
+#define US_SENSOR_H_
+#include "state.h"
+
+//states
+enum{
+	US_busy
+}US_state_id;
+
+//prototypes
+STATE_define(US_busy);
+void US_init();
+
+//global pointer to fun
+void (*US_state)();
+
+
+
+#endif /* US_SENSOR_H_ */
