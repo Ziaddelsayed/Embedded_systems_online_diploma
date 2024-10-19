@@ -1,0 +1,12 @@
+18:10:00 **** Rebuild of configuration Debug for project Students Management System ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Students Management System.o" "..\\src\\Students Management System.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\fifo.o" "..\\src\\fifo.c" 
+..\src\fifo.c: In function 'add_student_manully':
+..\src\fifo.c:102:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   scanf("%d",new_student.student.cid[i]);
+           ^
+gcc -o "Students Management System.exe" "src\\Students Management System.o" "src\\fifo.o" 
+
+18:10:01 Build Finished (took 1s.378ms)
+

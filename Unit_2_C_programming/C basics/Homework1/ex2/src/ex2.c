@@ -13,7 +13,7 @@
 
 int main(void) {
 	int x;
-	printf("Enter a integer:\n");
+	printf("Enter an integer:\n");
 	fflush(stdin); fflush(stdout);
 	scanf("%d",&x);
 	printf("you entered : %d",x);
