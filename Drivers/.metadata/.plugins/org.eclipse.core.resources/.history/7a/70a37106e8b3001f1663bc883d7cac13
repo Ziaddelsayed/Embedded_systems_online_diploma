@@ -1,0 +1,41 @@
+/*
+ * STM32F103C6_GPIO_driver.h
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: ziade
+ */
+
+#ifndef INC_STM32F103C6_GPIO_DRIVER_H_
+#define INC_STM32F103C6_GPIO_DRIVER_H_
+
+//----------------------------
+//Includes
+//----------------------------
+#include "STM32F103xx.h"
+
+
+
+//----------------------------
+//User type definitions (structures)
+//----------------------------
+typedef struct{
+	uint16_t GPIO_pinNumber;	//Specifies the GPIO pins to be configured.
+								//This parameter can be a value of @ref GPIO_PINS_define.
+
+}GPIO_pinConfig_t;
+
+//----------------------------
+//Macros Configuration References
+//----------------------------
+/*@ref
+Module_REF_NAME_define
+ */
+/*
+ * ===============================================
+ * APIs Supported by "MCAL GPIO DRIVER"
+ * ===============================================
+ */
+
+
+
+#endif /* INC_STM32F103C6_GPIO_DRIVER_H_ */

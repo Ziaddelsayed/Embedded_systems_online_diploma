@@ -1,0 +1,139 @@
+/*
+ * STM32F103C6_GPIO_driver.c
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "STM32F103C6_GPIO_driver.h"
+
+uint8_t Get_CRLH_Position(uint16_t PinNumber)
+{
+
+}
+
+ /**================================================================
+ * @Fn				-MCAL_GPIO_Init
+ * @brief			-Initializes the GPIOx PINy according to the specific parameters in the pinConfig.
+ * @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+ * @param [IN]		-pinConfig: pointer to GPIO_PinConfig_t structure that contains
+ * 					 the configuration information for specific GPIO PIN.
+ * @retval			-None
+ * Note				-STM32F103C6 MCU has GPIO A,B,C,D,E Modules
+ * 					 but LQFP48 has only GPIO A,B,PART of C/D exported as external PINS from the MCU.
+ */
+void MCAL_GPIO_Init (GPIO_t* GPIOx,GPIO_pinConfig_t* pinconfig)
+{
+	//Port configure register low (GPIOX_CRL) configures pins 0>>7.
+	//Port configure register high (GPIOX_CRH) configures pins 8>>15.
+	volatile uint32_t* configregister= NULL;
+	configregister= (pinconfig->GPIO_pinNumber < GPIO_PIN_8)? &GPIOx->CRL:&GPIOx->CRH ;
+
+
+}
+
+/**================================================================
+* @Fn				-MCAL_GPIO_DeInit
+* @brief			-Reset all the GPIOx PINy.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @retval			-None
+* Note				-None
+*/
+void MCAL_GPIO_DeInit (GPIO_t* GPIOx)
+{
+
+}
+
+
+
+
+/**================================================================
+* @Fn				-MCAL_GPIO_ReadPin
+* @brief			-Read specific PIN.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @param [IN]		-PinNumber:Set PinNumber according to @ref GPIO_PINS_define.
+* @retval			-The input pin value (two values based on @ref GPIO_PIN_State).
+* Note				-None
+*/
+uint8_t MCAL_GPIO_ReadPin (GPIO_t* GPIOX,uint16_t PinNumber)
+{
+
+}
+
+
+
+
+/**================================================================
+* @Fn				-MCAL_GPIO_ReadPort
+* @brief			-Read specific PORT.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @retval			-The input port value.
+* Note				-None
+*/
+uint16_t MCAL_GPIO_ReadPort (GPIO_t* GPIOX)
+{
+
+}
+
+
+/**================================================================
+* @Fn				-MCAL_GPIO_WritePin.
+* @brief			-Write on specific output PIN.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @param [IN]		-PinNumber:Set PinNumber according to @ref GPIO_PINS_define.
+* @param [IN]		-value: Pin value.
+* @retval			-None.
+* Note				-None.
+*/
+void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,uint8_t Value)
+{
+
+}
+
+
+
+
+
+/**================================================================
+* @Fn				-MCAL_GPIO_WritePort.
+* @brief			-Write on specific output PORT.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @param [IN]		-value: Port value.
+* @retval			-None.
+* Note				-None.
+*/
+void MCAL_GPIO_WritePort (GPIO_t* GPIOX,uint16_t Value)
+{
+
+}
+
+
+
+
+/**================================================================
+* @Fn				-MCAL_GPIO_TogglePin.
+* @brief			-Toggle specific PIN.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @param [IN]		-PinNumber:Set PinNumber according to @ref GPIO_PINS_define.
+* @retval			-None.
+* Note				-None.
+*/
+void MCAL_GPIO_TogglePin (GPIO_t* GPIOX,uint16_t PinNumber)
+{
+
+}
+
+
+
+
+/**================================================================
+* @Fn				-MCAL_GPIO_LockPin.
+* @brief			-Lock specific PIN.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @param [IN]		-PinNumber:Set PinNumber according to @ref GPIO_PINS_define.
+* @retval			-Ok if pin config is locked or Error if the pin is not locked (Ok & Error are defined @ref GPIO_RETURN_LOCK).
+* Note				-None.
+*/
+uint8_t MCAL_GPIO_LockPin (GPIO_t* GPIOX,uint16_t PinNumber)
+{
+
+}

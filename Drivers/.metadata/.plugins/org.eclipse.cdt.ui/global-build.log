@@ -1,0 +1,625 @@
+13:56:27 **** Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:20:20 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+17:38:39 **** Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+18:18:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+Finished building: Drivers.bin
+ 
+14:02:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+In file included from ../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:7:0:
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:92:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Error      0
+         ^
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:93:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Enabled     1
+         ^
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:111:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value);
+                                                           ^~~~~~~~
+                                                           uint8_t
+In file included from ../Src/main.c:25:0:
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:92:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Error      0
+         ^
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:112:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value);
+                                         ^~~~~~~~~
+                                         uint16_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:93:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Enabled     1
+         ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:78:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value)
+                                                           ^~~~~~~~
+                                                           uint8_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:95:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value)
+                                         ^~~~~~~~~
+                                         uint16_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:111:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value);
+                                                           ^~~~~~~~
+                                                           uint8_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:112:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value);
+                                         ^~~~~~~~~
+                                         uint16_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:127:1: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ u_int8_t MCAL_GPIO_LockPin (GPIO_t* GPIOX,uint16_t PinNumber)
+ ^~~~~~~~
+ uint8_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:127:10: error: conflicting types for 'MCAL_GPIO_LockPin'
+ u_int8_t MCAL_GPIO_LockPin (GPIO_t* GPIOX,uint16_t PinNumber)
+          ^~~~~~~~~~~~~~~~~
+In file included from ../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:7:0:
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:114:9: note: previous declaration of 'MCAL_GPIO_LockPin' was here
+ uint8_t MCAL_GPIO_LockPin (GPIO_t* GPIOX,uint16_t PinNumber);
+         ^~~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32F103C6_Drivers/subdir.mk:18: STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:03:19 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+In file included from ../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:7:0:
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:92:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Error      0
+         ^
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:93:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Enabled     1
+         ^
+In file included from ../Src/main.c:25:0:
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:92:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Error      0
+         ^
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:93:9: error: macro names must be identifiers
+ #define @ref GPIO_RETURN_LOCK_Enabled     1
+         ^
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:111:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value);
+                                                           ^~~~~~~~
+                                                           uint8_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:111:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value);
+                                                           ^~~~~~~~
+                                                           uint8_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:112:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value);
+                                         ^~~~~~~~~
+                                         uint16_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:112:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value);
+                                         ^~~~~~~~~
+                                         uint16_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:78:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value)
+                                                           ^~~~~~~~
+                                                           uint8_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:95:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value)
+                                         ^~~~~~~~~
+                                         uint16_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32F103C6_Drivers/subdir.mk:18: STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:03:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+In file included from ../Src/main.c:25:0:
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:111:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value);
+                                                           ^~~~~~~~
+                                                           uint8_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:112:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value);
+                                         ^~~~~~~~~
+                                         uint16_t
+In file included from ../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:7:0:
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:111:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value);
+                                                           ^~~~~~~~
+                                                           uint8_t
+D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc/STM32F103C6_GPIO_driver.h:112:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value);
+                                         ^~~~~~~~~
+                                         uint16_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:78:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value)
+                                                           ^~~~~~~~
+                                                           uint8_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:95:41: error: unknown type name 'u_int16_t'; did you mean 'uint16_t'?
+ void MCAL_GPIO_WritePort (GPIO_t* GPIOX,u_int16_t Value)
+                                         ^~~~~~~~~
+                                         uint16_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [STM32F103C6_Drivers/subdir.mk:18: STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:04:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:78:59: error: unknown type name 'u_int8_t'; did you mean 'uint8_t'?
+ void MCAL_GPIO_WritePin (GPIO_t* GPIOX,uint16_t PinNumber,u_int8_t Value)
+                                                           ^~~~~~~~
+                                                           uint8_t
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [STM32F103C6_Drivers/subdir.mk:18: STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:04:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:51:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+14:24:28 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:81:21: warning: variable 'configregister' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* configregister= NULL;
+                     ^~~~~~~~~~~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:113:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:192:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:20:32 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:44: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4)<<2) || (pinconfig->GPIO_Output_Speed)) & 0x0f);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:42: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE)<<2) || 0x0) & 0x0f);
+                   ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:170:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:234:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:40:03 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:45: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4) << 2) || (pinconfig->GPIO_Output_Speed)) & 0x0f);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:43: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE) << 2) || 0x0) & 0x0f);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_ReadPort':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:202:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:266:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:42:38 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:45: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4) << 2) || (pinconfig->GPIO_Output_Speed)) & 0x0f);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:43: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE) << 2) || 0x0) & 0x0f);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:269:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:50:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:45: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4) << 2) || (pinconfig->GPIO_Output_Speed)) & 0x0f);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:43: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE) << 2) || 0x0) & 0x0f);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:286:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:51:24 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:45: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4) << 2) || (pinconfig->GPIO_Output_Speed)) & 0x0f);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:43: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE) << 2) || 0x0) & 0x0f);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_LockPin':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:287:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+16:05:26 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:45: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4) << 2) || (pinconfig->GPIO_Output_Speed)) & 0x0f);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:43: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE) << 2) || 0x0) & 0x0f);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+16:37:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'GPIO_int':
+../Src/main.c:39:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_pinNumber = GPIO_PIN_1 ;
+        ^~
+../Src/main.c:40:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+        ^~
+../Src/main.c:45:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_pinNumber = GPIO_PIN_1 ;
+        ^~
+../Src/main.c:46:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^~
+../Src/main.c:47:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^~
+../Src/main.c:51:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_pinNumber = GPIO_PIN_13 ;
+        ^~
+../Src/main.c:52:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+        ^~
+../Src/main.c:56:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_pinNumber = GPIO_PIN_13 ;
+        ^~
+../Src/main.c:57:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_MODE = GPIO_MODE_OUTPUT_PP;
+        ^~
+../Src/main.c:58:8: error: invalid type argument of '->' (have 'GPIO_pinConfig_t {aka struct <anonymous>}')
+  pincfg->GPIO_Output_Speed = GPIO_SPEED_10M;
+        ^~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:38:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      8	   1568	   2964	    b94	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+16:43:51 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      8	   1568	   2964	    b94	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+13:04:52 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:45: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4) << 2) || (pinconfig->GPIO_Output_Speed)) & 0x0f);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:43: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE) << 2) || 0x0) & 0x0f);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      8	   1568	   2964	    b94	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+13:25:23 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c: In function 'MCAL_GPIO_Init':
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:90:45: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+   PIN_Config = ((((pinconfig->GPIO_MODE -4) << 2) || (pinconfig->GPIO_Output_Speed))) & 0x0f;
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c:98:43: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+    PIN_Config = ((((pinconfig->GPIO_MODE) << 2) || 0x0)) & 0x0f;
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      8	   1568	   2964	    b94	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+13:27:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1376	      8	   1568	   2952	    b88	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 

@@ -1,0 +1,20 @@
+13:27:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1376	      8	   1568	   2952	    b88	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+
+13:27:45 Build Finished. 0 errors, 0 warnings. (took 1s.158ms)
+

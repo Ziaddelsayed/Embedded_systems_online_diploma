@@ -1,0 +1,41 @@
+/*
+ * STM32F103xx.h
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: ziade
+ */
+
+#ifndef INC_STM32F103XX_H_
+#define INC_STM32F103XX_H_
+
+//----------------------------
+//Includes
+//----------------------------
+#include "stdlib.h"
+#include <stdint.h>
+
+//----------------------------
+//Base addresses for Memories
+//----------------------------
+#define Flash_Memory_BASE				0x08000000UL
+
+
+
+//----------------------------
+//Base addresses for BUS Peripherals
+ //----------------------------
+//-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral register:
+ //-*-*-*-*-*-*-*-*-*-*-*
+//-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral Instants:
+ //-*-*-*-*-*-*-*-*-*-*-*
+ //-*-*-*-*-*-*-*-*-*-*-*
+//clock enable Macros:
+ //-*-*-*-*-*-*-*-*-*-*-*
+ //-*-*-*-*-*-*-*-*-*-*-*
+//Generic Macros:
+ //-*-*-*-*-*-*-*-*-*-*-*
+
+
+#endif /* INC_STM32F103XX_H_ */
