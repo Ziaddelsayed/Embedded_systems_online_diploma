@@ -1,0 +1,23 @@
+/*
+ * keypad.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "keypad.h"
+
+int Key_padRow[] = { R0, R1, R2, R3 }; //rows of the keypad
+int Key_padCol[] = { C0, C1, C2, C3 }; //columns
+
+
+void Keypad_Init()
+{
+
+
+}
+char Keypad_getkey()
+{
+
+}
+
+

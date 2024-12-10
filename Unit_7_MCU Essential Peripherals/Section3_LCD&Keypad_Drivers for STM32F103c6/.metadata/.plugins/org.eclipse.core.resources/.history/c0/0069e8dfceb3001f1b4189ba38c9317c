@@ -1,0 +1,115 @@
+/*
+ * STM32F103xx.h
+ *
+ *  Created on: Dec 6, 2024
+ *      Author: ziade
+ */
+
+#ifndef INC_STM32F103XX_H_
+#define INC_STM32F103XX_H_
+
+//----------------------------
+//Includes
+//----------------------------
+#include "stdlib.h"
+#include <stdint.h>
+
+//----------------------------
+//Base addresses for Memories
+//----------------------------
+#define Flash_Memory_BASE							0x08000000UL
+#define System_Memory_BASE							0x1FFFF000UL
+#define SRAM_Memory_BASE							0x20000000UL
+#define Peripherals_BASE							0x40000000UL
+#define Cortex_M3_Internal_Peripherals				0xE0000000UL
+
+//----------------------------
+//Base addresses for AHB BUS Peripherals
+//----------------------------
+
+//RCC
+#define RCC_BASE 									0x40021000UL
+
+
+//----------------------------
+//Base addresses for ABP1 BUS Peripherals
+//----------------------------
+
+
+
+
+
+
+//----------------------------
+//Base addresses for ABP2 BUS Peripherals
+//----------------------------
+
+//GPIO
+//A & B are fully included in LQFP48 package
+#define GPIOA_BASE 									0x40010800UL
+#define GPIOB_BASE 							    	0x40010C00UL
+
+//C & D are partial included in LQFP48 package
+#define GPIOC_BASE 									0x40011000UL
+#define GPIOD_BASE 									0x40011400UL
+
+//E,F&G are not included in LQFP48 package
+
+//EXIT
+#define EXIT_BASE 									0x40010400UL
+
+//AFIO
+#define AFIO_BASE 									0x40010000UL
+
+
+//==========================================================================================
+
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral register:
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+
+//-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral register:RCC
+//-*-*-*-*-*-*-*-*-*-*-*
+
+
+//-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral register:GPIO
+//-*-*-*-*-*-*-*-*-*-*-*
+typedef struct{
+	volatile uint32_t CRL;
+	volatile uint32_t CRH;
+	volatile uint32_t CRL;
+	volatile uint32_t CRL;
+	volatile uint32_t CRL;
+	volatile uint32_t CRL;
+
+
+}GPIO_t;
+
+
+//-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral register:EXIT
+//-*-*-*-*-*-*-*-*-*-*-*
+
+
+//-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral register:AFIO
+//-*-*-*-*-*-*-*-*-*-*-*
+
+
+
+
+//-*-*-*-*-*-*-*-*-*-*-*
+//Peripheral Instants:
+ //-*-*-*-*-*-*-*-*-*-*-*
+ //-*-*-*-*-*-*-*-*-*-*-*
+//clock enable Macros:
+ //-*-*-*-*-*-*-*-*-*-*-*
+ //-*-*-*-*-*-*-*-*-*-*-*
+//Generic Macros:
+ //-*-*-*-*-*-*-*-*-*-*-*
+
+
+#endif /* INC_STM32F103XX_H_ */

@@ -1,0 +1,9 @@
+/*
+ * LCD.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "LCD.h"
+
+

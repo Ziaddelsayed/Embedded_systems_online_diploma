@@ -1,0 +1,18 @@
+/*
+ * LCD.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "LCD.h"
+
+void Delay(int x)
+{
+	unsigned i,j;
+	for(i=0 ; i<x ;i++)
+		for(j=0 ; j<255 ;j++);
+
+}
+
+
+

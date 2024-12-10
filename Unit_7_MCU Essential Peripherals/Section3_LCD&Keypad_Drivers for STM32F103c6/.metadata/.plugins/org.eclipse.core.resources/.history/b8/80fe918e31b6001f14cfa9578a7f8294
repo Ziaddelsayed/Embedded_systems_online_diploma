@@ -1,0 +1,170 @@
+/*
+ * LCD.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "LCD.h"
+
+void ms_wait(int x)
+{
+	unsigned i,j;
+	for(i=0 ; i<x ;i++)
+		for(j=0 ; j<255 ;j++);
+
+}
+void LCD_INIT()
+{
+	ms_wait(20);
+	//EN_SWITCH , RS_SWITCH and RW_SWITCH are floating Input
+	PinCfg.GPIO_pinNumber = EN_SWITCH ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = RS_SWITCH ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = RW_SWITCH ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	ms_wait(15);
+	//Data Pins are Output push pull wit 10M Speed
+	PinCfg.GPIO_pinNumber = GPIO_PIN_0 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_1 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_2 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_3 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_4 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_5 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_6 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_7 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+
+}
+
+
+void LCD_WRITE_COMMAND(unsigned char command)
+{
+
+}
+
+
+
+void LCD_WRITE_CHAR(unsigned char character)
+{
+
+}
+void LCD_WRITE_STRING(char* string)
+{
+
+}
+
+
+
+void LCD_check_lcd_isbusy(void)
+{
+	//to check busy , Data Pins are Input.
+	PinCfg.GPIO_pinNumber = GPIO_PIN_0 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_1 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_2 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_3 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_4 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_5 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_6 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = GPIO_PIN_7 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(LCD_PORT, &PinCfg);
+
+	//	LCD_PORT |= (1 << RW_SWITCH);
+	//	LCD_PORT &= ~(1 << RS_SWITCH);
+	MCAL_GPIO_WritePin(LCD_PORT, RW_SWITCH, GPIO_PIN_SET);
+	MCAL_GPIO_WritePin(LCD_PORT, RS_SWITCH, GPIO_PIN_RESET);
+
+
+	LCD_Kick();
+
+	//	LCD_PORT &= ~(1 << RW_SWITCH);
+	MCAL_GPIO_WritePin(LCD_PORT, RW_SWITCH, GPIO_PIN_RESET);
+
+
+}
+
+
+
+
+void LCD_Kick(void)
+{
+
+}
+
+
+
+
+void LCD_clear_screen()
+{
+
+}
+
+
+
+void LCD_GOTO_XY(unsigned char line, unsigned char position)
+{
+
+}
+
+
