@@ -859,3 +859,572 @@ Finished building: Drivers.bin
 Finished building: Drivers.list
  
  
+15:43:32 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/LCD.d" -MT"HAL/LCD/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+15:43:47 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/LCD.d" -MT"HAL/LCD/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:45:47 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:50:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:04:15 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/LCD.d" -MT"HAL/LCD/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+18:06:16 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:10:56 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:13:53 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+18:25:26 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:00:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/LCD.d" -MT"HAL/LCD/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:02:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:38:50 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.d" -MT"STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/GPIO/STM32F103C6_GPIO_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/LCD.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/LCD.d" -MT"HAL/LCD/LCD.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/LCD.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:27:10: warning: unused variable 'AFIO_EXTICR_postion' [-Wunused-variable]
+  uint8_t AFIO_EXTICR_postion = (EXTI_Config->EXTI_PIN.EXTI_LineNumber % 4)* 4 ;
+          ^~~~~~~~~~~~~~~~~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:26:10: warning: unused variable 'AFIO_EXTICR_index' [-Wunused-variable]
+  uint8_t AFIO_EXTICR_index   = EXTI_Config->EXTI_PIN.EXTI_LineNumber / 4 ;
+          ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+19:40:27 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:48:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:55:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3132	     40	   1568	   4740	   1284	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+11:06:03 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3336	     40	   1632	   5008	   1390	Drivers.elf
+Finished building: Drivers.list
+Finished building: default.size.stdout
+ 
+ 
+Finished building: Drivers.bin
+ 
+11:09:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3676	     40	   1632	   5348	   14e4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+11:13:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3676	     40	   1632	   5348	   14e4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+11:25:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c: In function 'Enable_NVIC':
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:55:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:56:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:57:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:58:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c: In function 'Disable_NVIC':
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:94:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:95:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:96:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:97:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:163:15: error: 'EXTI_PIN' undeclared (first use in this function); did you mean 'EXTI_t'?
+   Enable_NVIC(EXTI_PIN.EXTI_LineNumber);
+               ^~~~~~~~
+               EXTI_t
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:163:15: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [STM32F103C6_Drivers/EXTI/subdir.mk:18: STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+11:27:12 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c: In function 'Enable_NVIC':
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:55:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:56:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:57:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:58:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c: In function 'Disable_NVIC':
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:94:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:95:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:96:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:97:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:93:2: note: previously used here
+  case 5:
+  ^~~~
+make: *** [STM32F103C6_Drivers/EXTI/subdir.mk:18: STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+11:27:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c: In function 'Enable_NVIC':
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:55:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:56:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:57:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:58:2: error: duplicate case value
+  case 5:
+  ^~~~
+../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c:54:2: note: previously used here
+  case 5:
+  ^~~~
+make: *** [STM32F103C6_Drivers/EXTI/subdir.mk:18: STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+11:28:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3676	     40	   1632	   5348	   14e4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+11:31:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3676	     40	   1632	   5348	   14e4	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+11:48:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3596	      8	   1632	   5236	   1474	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+11:51:12 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3600	      8	   1632	   5240	   1478	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+12:01:15 **** Incremental Build of configuration Debug for project Drivers ****
+make -j16 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/HAL/inc" -I"D:/Embedded system diploma/github_repo/Drivers/Drivers/STM32F103C6_Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.d" -MT"STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32F103C6_Drivers/EXTI/STM32F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded system diploma\github_repo\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3600	      8	   1632	   5240	   1478	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 

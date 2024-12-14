@@ -1,0 +1,80 @@
+/*
+ * keypad.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "keypad.h"
+
+int Key_padRow[] = { R0, R1, R2, R3 }; //rows of the keypad
+int Key_padCol[] = { C0, C1, C2, C3 }; //columns
+
+
+void Keypad_Init()
+{
+
+	PinCfg.GPIO_pinNumber = R0 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = R1 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = R2 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = R3 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = C0 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = C1 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = C2 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	PinCfg.GPIO_pinNumber = C3 ;
+	PinCfg.GPIO_MODE = GPIO_MODE_OUTPUT_PP ;
+	PinCfg.GPIO_Output_Speed = GPIO_SPEED_10M ;
+	MCAL_GPIO_Init(KEYPAD_PORT, &PinCfg);
+
+	MCAL_GPIO_WritePort(KEYPAD_PORT, 0xFF);
+
+}
+char Keypad_getkey()
+{
+
+	int i,j;
+	for(i=0 ; i<4 ; i++)
+	{
+		MCAL_GPIO_WritePin(KEYPAD_PORT, Key_padCol[0], GPIO_PIN_SET);
+		MCAL_GPIO_WritePin(KEYPAD_PORT, Key_padCol[1], GPIO_PIN_SET);
+		MCAL_GPIO_WritePin(KEYPAD_PORT, Key_padCol[2], GPIO_PIN_SET);
+		MCAL_GPIO_WritePin(KEYPAD_PORT, Key_padCol[3], GPIO_PIN_SET);
+		MCAL_GPIO_WritePin(KEYPAD_PORT, Key_padCol[i], GPIO_PIN_RESET);
+
+		for(j=0 ; j<4 ; j++)
+		{
+			MCAL_GPIO_ReadPin(KEYPAD_PORT, Key_padRow[j]);
+
+		}
+	}
+
+}
+
+

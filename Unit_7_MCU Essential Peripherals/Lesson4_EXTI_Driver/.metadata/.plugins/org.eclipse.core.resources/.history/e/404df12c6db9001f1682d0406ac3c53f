@@ -1,0 +1,32 @@
+/*
+ * STM32F103C6_EXTI_driver.c
+ *
+ *  Created on: Dec 13, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "STM32F103C6_EXTI_driver.h"
+
+
+
+
+
+void MCAL_EXTI_Init(EXTI_PinConfig_t* EXTI_Config)
+{
+
+
+
+}
+void MCAL_EXTI_DeInit(void)
+{
+
+
+
+}
+
+void MCAL_EXTI_Update(EXTI_PinConfig_t* EXTI_Config)
+{
+
+
+}
+
+

@@ -1,0 +1,56 @@
+/*
+ * STM32F103C6_EXTI_driver.h
+ *
+ *  Created on: Dec 13, 2024
+ *      Author: Ziad El-Sayed
+ */
+
+#ifndef INC_STM32F103C6_EXTI_DRIVER_H_
+#define INC_STM32F103C6_EXTI_DRIVER_H_
+
+//----------------------------
+//Includes
+//----------------------------
+
+#include "STM32F103xx.h"
+#include "STM32F103C6_GPIO_driver.h"
+
+
+//----------------------------
+//User type definitions (structures)
+//----------------------------
+
+typedef struct {
+
+	uint16_t    EXTI_LineNumber ;
+	GPIO_t*		GPIO_PORT;
+	uint16_t	GPIO_PIN;
+	uint8_t		IVT_IRQ_Number ;
+
+}EXTI_GPIO_Mapping_t;
+
+
+typedef struct {
+
+	EXTI_GPIO_Mapping_t   EXTI_PIN;     // specifies the External interrupt GPIO mapping.
+										//This parameter can be a value of  @ref EXTI_define.
+
+
+
+}EXTI_PinConfig_t;
+
+
+
+
+//----------------------------
+//Macros Configuration References
+//----------------------------
+
+//@ref EXTI_define.
+#define EXTI0PA0				(EXTI_GPIO_Mapping_t){EXTI0 , GPIOA , GPIO_PIN_0 , EXTI0_IRQ }
+#define EXTI0PB0				(EXTI_GPIO_Mapping_t){EXTI0 , GPIOB , GPIO_PIN_0 , EXTI0_IRQ }
+#define EXTI0PC0				(EXTI_GPIO_Mapping_t){EXTI0 , GPIOC , GPIO_PIN_0 , EXTI0_IRQ }
+#define EXTI0PD0				(EXTI_GPIO_Mapping_t){EXTI0 , GPIOD , GPIO_PIN_0 , EXTI0_IRQ }
+
+
+#endif /* INC_STM32F103C6_EXTI_DRIVER_H_ */

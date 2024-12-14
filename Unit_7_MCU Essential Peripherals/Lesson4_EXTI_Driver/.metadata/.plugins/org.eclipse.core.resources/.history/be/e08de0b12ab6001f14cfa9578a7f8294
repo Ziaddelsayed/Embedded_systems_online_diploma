@@ -1,0 +1,40 @@
+/*
+ * LCD.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "LCD.h"
+
+void Delay(int x)
+{
+	unsigned i,j;
+	for(i=0 ; i<x ;i++)
+		for(j=0 ; j<255 ;j++);
+
+}
+void LCD_INIT()
+{
+
+}
+void LCD_WRITE_COMMAND(unsigned char command)
+{
+
+}
+void LCD_WRITE_CHAR(unsigned char character)
+{
+
+}
+void LCD_WRITE_STRING(char* string)
+{
+
+}
+void LCD_check_lcd_isbusy(void)
+{
+
+}
+void LCD_lcd_kick(void);
+void LCD_clear_screen();
+void LCD_GOTO_XY(unsigned char line, unsigned char position);
+
+

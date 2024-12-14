@@ -1,0 +1,143 @@
+/*
+ * STM32F103C6_EXTI_driver.c
+ *
+ *  Created on: Dec 13, 2024
+ *      Author: Ziad El-Sayed
+ */
+#include "STM32F103C6_EXTI_driver.h"
+
+/*
+ * =================================================================================================
+ 	 	 	 	 	 	 	 	 	 * Generic Variables *
+ * =================================================================================================
+ */
+	void(*GP_IRQ_CallBack[15])(void);
+
+
+
+/*
+ * =================================================================================================
+ 	 	 	 	 	 	 	 	 	 * Generic Macros *
+ * =================================================================================================
+ */
+#define AFIO_GPIO_EXTI_Mapping(x) 			(	(x==GPIOA)?0:\
+												(x==GPIOB)?1:\
+												(x==GPIOC)?2:\
+												(x==GPIOD)?3:0    )
+
+/*
+ * =================================================================================================
+ 	 	 	 	 	 	 	 	 	 * Generic Functions *
+ * =================================================================================================
+ */
+
+void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+{
+	//1.Configure GPIO to be AF Input --> Floating input.
+	GPIO_pinConfig_t pincfg;
+	pincfg.GPIO_pinNumber = EXTI_Config->EXTI_PIN.GPIO_PIN;
+	pincfg.GPIO_MODE = GPIO_MODE_INPUT_FLO ;
+	MCAL_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_PORT, &pincfg);
+	//==================================================================
+
+	//2.Update AFIO to Route between EXTI Line with PORT A,B,C and D.
+	uint8_t AFIO_EXTICR_index   = EXTI_Config->EXTI_PIN.EXTI_LineNumber / 4 ;
+	uint8_t AFIO_EXTICR_postion = (EXTI_Config->EXTI_PIN.EXTI_LineNumber % 4)* 4 ;
+
+	//clear 4 bits
+	AFIO->EXTICR[AFIO_EXTICR_index] &= ~(0xF << AFIO_EXTICR_postion);
+
+	AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_Mapping(EXTI_Config->EXTI_PIN.GPIO_PORT) & 0xF)<< AFIO_EXTICR_postion);
+	//==================================================================
+
+	//3.Update Rising or Falling edge.
+	EXTI->RTSR &= ~( 1<< EXTI_Config->EXTI_PIN.EXTI_LineNumber);
+	EXTI->FTSR &= ~( 1<< EXTI_Config->EXTI_PIN.EXTI_LineNumber);
+
+	if (EXTI_Config->Trigger_Case == EXTI_Trigger_RISING)
+	{
+		EXTI->RTSR |= ( 1<< EXTI_Config->EXTI_PIN.EXTI_LineNumber);
+
+	}else if (EXTI_Config->Trigger_Case == EXTI_Trigger_FALLING)
+	{
+		EXTI->FTSR |= ( 1<< EXTI_Config->EXTI_PIN.EXTI_LineNumber);
+
+	}else if(EXTI_Config->Trigger_Case == EXTI_Trigger_RISING_AND_FALLING)
+	{
+		EXTI->RTSR |= ( 1<< EXTI_Config->EXTI_PIN.EXTI_LineNumber);
+		EXTI->FTSR |= ( 1<< EXTI_Config->EXTI_PIN.EXTI_LineNumber);
+	}
+	//==================================================================
+
+	//4.Update IRQ CallBack.
+
+
+
+
+
+	//==================================================================
+
+	//5.Enable / Disable IRQ.
+
+}
+
+/**================================================================
+* @Fn				-MCAL_EXTI_Init
+* @brief			-This is used to initialize EXTI from specific GPIO PIN and specify the Mask/Trigger condition and IRQ CallBack.
+* @param [IN]		-EXTI_Config: Set by @ref EXTI_define , EXTI_Trigger_define and EXTI_IRQ_define .
+* @retval			-None
+* Note				-Mandatory to enable RCC clock for AFIO and the corresponding GPIO.
+*/
+void MCAL_EXTI_Init(EXTI_PinConfig_t* EXTI_Config)
+{
+	Update_EXTI(EXTI_Config);
+
+
+
+}
+
+
+
+/**================================================================
+* @Fn				-MCAL_EXTI_DeInit.
+* @brief			-Reset EXTI Registers and NVIC corresponding IRQ Mask.
+* @retval			-None.
+* Note				-None.
+*/
+void MCAL_EXTI_DeInit(void)
+{
+	EXTI->IMR   =  0x00000000;
+	EXTI->EMR   =  0x00000000;
+	EXTI->RTSR  =  0x00000000;
+	EXTI->FTSR  =  0x00000000;
+	EXTI->SWIER =  0x00000000;
+	EXTI->PR	=  0xFFFFFFFF;//cleared by writing a ‘1’ into the bit.
+
+	//Disable EXTI IRQ from NVIC.
+	NVIC_IRQ6_EXTI0_Disable();
+	NVIC_IRQ7_EXTI1_Disable();
+	NVIC_IRQ8_EXTI2_Disable();
+	NVIC_IRQ9_EXTI3_Disable();
+	NVIC_IRQ10_EXTI4_Disable();
+	NVIC_IRQ23_EXTI5_9_Disable();
+	NVIC_IRQ40_EXTI10_15_Disable();
+
+}
+
+
+
+/**================================================================
+* @Fn				-MCAL_EXTI_Update
+* @brief			-Reset all the GPIOx PINy.
+* @param [IN]		-GPIOx: where x can be (A...E depending on device used) to select the GPIO peripheral.
+* @retval			-None
+* Note				-None
+*/
+void MCAL_EXTI_Update(EXTI_PinConfig_t* EXTI_Config)
+{
+	Update_EXTI(EXTI_Config);
+
+
+}
+
+
